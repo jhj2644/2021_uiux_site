@@ -5,11 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HANGUK</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".slider1").bxSlider()
+            $(".slider2").bxSlider()
+        })
+    </script>
+    
 </head>
 <body>
     <!-- header start -->
@@ -18,7 +32,7 @@
             <div class="utilWrap clearfix">
                 <div class="util1">
                     <ul class="clearfix">
-                        <li><a href="#">대학교</a></li>
+                        <li><a href="#" class="active">대학교</a></li>
                         <li><a href="#">입학안내</a></li>
                         <li><a href="#">대학원</a></li>
                     </ul>
@@ -55,18 +69,124 @@
     </header>
     <!-- header end -->
 
-    <!-- section start  -->
-    <section id="section">
-        <div class="contentTopWrap">
-            <div class="content1Wrap">
-                <div class="text">
+    <!-- contents start  -->
+    <div class="contents">
+        <section class="title clearfix">
+            
+                <div class="title_left">
                     <p>함께 나누며 세상을 이끌어</p>
-                    <h1>세계로향하는 한국대학교</h1> 
+                    <h2>세계로향하는 한국대학교</h2>
                 </div>
-            </div>
-        </div>
+            
+                <div class="title_right">
+                    <ul class="clearfix">
+                        <li><a href="#"><img src="images/hanguk_icon01.png" alt="">
+                            <p>입학절차안내</p></a>
+                        </li>
+                        <li><a href=""><img src="images/hanguk_icon02.png" alt="">
+                            <p>입학설명회</p></a>
+                        </li>
+                        <li><a href=""><img src="images/hanguk_icon03.png" alt="">
+                            <p>장학제도</p></a>
+                        </li>
+                        <li><a href=""><img src="images/hanguk_icon04.png" alt="">
+                            <p>증명서발급</p></a>
+                        </li>
+                    </ul>
+                </div>
+            
+        </section>
+        <div class="container">
+            <ul class="clearfix">
+                <li>
+                    <ul class="slider1">
+                        <li><img src="images/slide_bg01.png" alt="">
+                            <div class="txt">
+                                <p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p> 
+                                <a href="#" class="btn">자세히 보기</a>
+                            </div>                            
+                        </li>
+                        <li><img src="images/slide_bg02.png" alt="">
+                            <div class="txt">
+                                <p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p> 
+                                <a href="#" class="btn">자세히 보기</a>
+                            </div> </li>
+                        <li><img src="images/slide_bg03.png" alt="">
+                            <div class="txt">
+                                <p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p> 
+                                <a href="#" class="btn">자세히 보기</a>
+                            </div> 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/bg02.png" alt="">
+                    <div class="txt2">
+                        <p>
+                            <b>APP</b>으로<br>
+                            <b>스마트 도서관</b><br>
+                            바로이용하자!
+                        </p>
+                        <br>
+                        <p class="small">
+                            모바일 열람증은<br>
+                            도서관 자료실 / 도서대출 등에<br>
+                            사용 할 수 있습니다.
+                        </p>
+                        <a href="#" class="btn">자세히 보기</a>
+                    </div> 
+                </li>
+                <li>
+                    <a href="#"><p>HOT LINK</p></a>
+                    <ul>
+                        <a href="#">
+                            <li><img src="images/link_icon01.png" alt="">
+                                <p>국제교류<br>센터</p>
+                            </li>
+                        </a>
+                        <a href="3">
+                            <li><img src="images/link_icon02.png" alt="">
+                                <p>원격지원<br>시스템</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li><img src="images/link_icon03.png" alt="">
+                                <p>예산 / 결산<br>공고</p>
+                            </li>
+                        </a>
+                    </ul>
 
-    </section>
+                </li>
+                <li>
+                    <a href="#"><p>공지사항</p></a>
+                    <ul>
+                        <li>
+
+                        </li>
+                    </ul>
+
+                </li>
+                <li>5</li>
+                <li>
+                    <img src="images/bg03.png" alt="">
+                </li>
+                <li>
+                    <img src="images/bg04.png" alt="">
+                </li>
+                <li>
+                    <ul class="slider2">
+                        <li><img src="images/banner01 (1).png" alt=""></li>
+                        <li><img src="images/banner02 (2).png" alt=""></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    
     
 </body>
 </html>

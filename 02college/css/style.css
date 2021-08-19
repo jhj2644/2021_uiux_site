@@ -1,23 +1,40 @@
 @charset "utf-8";
-body{font-family: 'NanumGothic';}
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-size: 14px;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+}
 
 /* header  */
-header#header{}
+header#header{min-width: 1200px;}
 header#header div.topWrap{background: #0044AF;margin: 0 auto;}
 div.utilWrap{
-    width: 1200px;margin: 0 auto;background: #0044AF;position: relative;
+    width: 1200px;margin: 0 auto;
 }
 div.util1{float: left;}
 div.util2{float: right;}
 
-div.utilWrap div.util1 ul li{float: left;padding: 0 2px;padding-left: 0;}
+div.utilWrap div.util1 ul li{float: left;_padding: 0 2px;_padding-left: 0;margin-right: 2px;}
 div.util1 ul li a{
     display: block;text-align: center;line-height: 40px;
     width: 120px;
-    padding: 0 12px;height: 40px;
+    _padding: 0 12px;_height: 40px;
     color: #F8F8F8;font-size: 15px;
     background: #00163B;
 }
+div.util1 ul li a.active{background: #fff;color: #6A6A6A;}
 div.util1 ul li a:hover{
     background-color: #FFFFFF;
     color: #6A6A6A;
@@ -40,13 +57,15 @@ div.util2 ul li a{
 
 
 div.util2 ul li:nth-child(2) a{
-    float: left;width: 16px;height: 16px;background: #fff;line-height:16px;color:#9B9B9B;text-align: center;
+    float: left;width: 16px;height: 16px;
+    background: #fff;color:#9B9B9B;
+    line-height:16px;text-align: center;
     padding:0;font-size: 10px;margin-right: 3px;margin-left: 2px;
 }
 div.util2 ul li:nth-child(2) a:last-child{margin-right:0;}
 
 div.util2 ul li:nth-child(2){
-    padding:0 11px;padding-top:12.5px;
+    padding:0 10px;padding-top:12.5px;
 }
 
 /* div.util2 ul li:nth-child(2){}
@@ -54,11 +73,6 @@ div.util2 ul li:nth-child(2) a{
     float: left;width: 16px;;height: 16px;margin-top: 0;
     background: #fff;
 } */
-
-
-
-
-
 
 
 
@@ -76,6 +90,83 @@ div.navWrap nav.gnb ul li a{
     color: #464646;font-size: 19px;
     padding-right: 0;
 }
+
+
+
+
+/* contents */
+.contents{
+    _height: 1300px; /*나중에 삭제*/
+    min-width: 1200px;
+    background-color: gray;
+    background-image: url(../images/dot.png),url(../images/main_bg.jpg);
+    background-repeat: repeat,no-repeat;
+    background-size: auto,cover;
+    background-position: center;
+    padding-top: 65px;
+}
+.contents .title{
+    width: 1200px;margin: 0 auto;height: 130px;_background: blue;
+    margin-bottom: 55px;
+}
+
+
+.title_left{float: left;}
+.title_right{float: right;}
+.title_right ul li{float: left;_background: red;padding: 0 10px;}
+.title_right ul li p{text-align: center;padding-top: 4px;color: #E2E3E5;font-size: 15px;}
+.title_right ul li img{opacity: 90%;}
+
+
+.title_left p{font-size: 46px;color: #fff;font-weight: lighter;padding-bottom: 14px;letter-spacing: 0.005em;}
+.title_left h2{font-size: 75px;color: #fff;letter-spacing: -0.135em;}
+
+
+
+.container{width: 1200px;margin: 0 auto;background: #ddd;}
+.container>ul>li{float: left;width: 25%;height: 225px;}
+
+.container>ul>li:nth-child(2n){background: rgb(255, 214, 221);}
+
+.container>ul>li:nth-child(1){width: 75%;height: 450px;}
+.slider1 .txt{
+    position: absolute;left: 70px;top: 72px;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+}
+.slider1 .txt p{font-size: 68px;color: #1451B6;}
+.slider1 .txt a.btn{
+    display: block;width: 166px;height: 38px;text-align: center;
+    line-height: 38px;background: #192D4E;color: #FFFFFF;
+    margin-top: 22px;
+}
+
+
+
+.container>ul>li:nth-child(2){height: 450px;position: relative;}
+.txt2{position: absolute;top:70px;left: 30px;}
+.txt2 p{font-size: 39px;color: #FEFFFA;}
+.txt2 .small{font-size: 17px;color:#EDE9EA;line-height: 25px;}
+.txt2 a.btn{
+    display: block;width: 170px;height: 42px;text-align: center;
+    line-height: 42px;background:rgba(0,0,0,0.5);color: #FDFFFE;
+    margin-top: 36px;
+    border: 1px solid #f5dd95;
+}
+
+.container>ul>li:nth-child(3){}
+.container>ul>li:nth-child(4){}
+.container>ul>li:nth-child(5){}
+.container>ul>li:nth-child(6){}
+.container>ul>li:nth-child(7){}
+.container>ul>li:nth-child(8){width: 75%;}
+
+
+
+
+
+
+
+
 
 
 
