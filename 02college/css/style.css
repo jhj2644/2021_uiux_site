@@ -123,6 +123,7 @@ div.navWrap nav.gnb ul li a{
 
 
 
+
 .container{width: 1200px;margin: 0 auto;background: #ddd;}
 .container>ul>li{float: left;width: 25%;height: 225px;}
 
@@ -153,7 +154,19 @@ div.navWrap nav.gnb ul li a{
     border: 1px solid #f5dd95;
 }
 
-.container>ul>li:nth-child(3){}
+.container>ul>li:nth-child(3){background: #00163B;}
+.middle01{padding-top: 22px;padding-left: 20px;}
+.middlelogo{
+    display: block;font-size: 22px;color: #FEFEFF;letter-spacing: 0.015em;
+}
+.middle01 ul a{float: left;}
+.middle01 ul li{padding: 0 12.5px 0 12.5px;margin-top: 32px;}
+.middle01 ul li p{color: #FFFFFF;text-align: center;font-size: 13px;margin-top: 5px;}
+
+
+
+
+
 .container>ul>li:nth-child(4){}
 .container>ul>li:nth-child(5){}
 .container>ul>li:nth-child(6){}
