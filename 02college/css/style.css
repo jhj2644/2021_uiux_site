@@ -96,7 +96,7 @@ div.navWrap nav.gnb ul li a{
 
 /* contents */
 .contents{
-    _height: 1300px; /*나중에 삭제*/
+    height: 1300px; /*나중에 삭제*/
     min-width: 1200px;
     background-color: gray;
     background-image: url(../images/dot.png),url(../images/main_bg.jpg);
@@ -165,12 +165,72 @@ div.navWrap nav.gnb ul li a{
 
 
 
-.container>ul>li:nth-child(4){}
+.container>ul>li:nth-child(4){
+    background-image: url(../images/bg04_back.png);
+}
+.middle02{padding-top: 22px;padding-left: 20px;}
+.middle02 .notice{display: block;font-size: 22px;color: #FEFEFF;position: relative;}
+.middle02 .notice:after{
+    content: "";width: 260px;height: 2px;
+    display: block;background: #FFFFFF;
+    position: absolute;top: 40px;
+}
+.middle02 ul{margin-top: 30px;}
+.middle02 ul li{float: left;position: relative;padding: 9px 0;width: 180px;}
+.middle02 a{color: #fff;font-size: 13px;letter-spacing: -0.03em;}
+.middle02 span{position: absolute;right: -70px;}
 
-.container>ul>li:nth-child(5){}
-.container>ul>li:nth-child(6){}
-.container>ul>li:nth-child(7){}
-.container>ul>li:nth-child(8){width: 75%;}
+
+
+.container>ul>li:nth-child(5){
+    background: #fff;
+}
+.middle03{padding-top: 22px;padding-left: 20px;}
+.middle03 .Snews{font-size: 22px;}
+.middle03 .news {float: left;margin-top: 20px;}
+.middle03 img{float: left;}
+.middle03 .news p{
+    float: right;padding: 0 15px;font-size: 14px;
+    color: #4C4C4C;letter-spacing: -0.045em;
+    line-height: 20px;
+    
+}
+.middle03 .sns ul{position: relative;bottom: -22px;right: -127px;}
+.middle03 .sns ul li{float: left;padding: 0 2px;}
+
+
+
+.container>ul>li:nth-child(6){
+    position: relative;width: 300px;
+}
+.campus{position: absolute;bottom: 0;width: 300px;height: 52px;background: rgb(0, 0, 0, 0.85);}
+.campus p{color: #FFFFFD;font-size: 20px;text-align: center;line-height: 52px;}
+
+
+
+
+.container>ul>li:nth-child(7){position: relative;}
+.container>ul>li:nth-child(7) .player{
+    position: absolute;top: 50%;left: 50%;
+    margin-top: -32px;margin-left: -40px;
+}
+
+
+
+
+.container>ul>li:nth-child(8){width: 75%;position: relative;}
+.txt3{position: absolute;top: 27px;left: 23px;}
+.txt3 p{font-size: 34px;color: #FE5141;letter-spacing: -0.05em;font-weight: normal;}
+.txt3 .big{font-size: 53px;color: #FE5141;letter-spacing: -0.015em;}
+.txt3 a.btn2{
+    display: block;width: 170px;
+    height: 42px;line-height: 42px;
+    text-align: center;
+    background: #FF2F21;color: #FEFFFF;
+    margin-top: 20px;
+    border: 1px solid #fff;
+}
+
 
 
 
