@@ -142,6 +142,43 @@ div.navWrap nav.gnb ul li a{
 }
 
 
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 55px;
+    height: 70px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bx-wrapper .bx-prev {
+    left: 0px;
+    background: url(../images/slider_button01.png) no-repeat; 
+}
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 55px;
+    height: 70px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bx-wrapper .bx-next {
+    right: 0px;
+    background: url(../images/slider_button02.png) no-repeat;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #0144AF;
+}
+
+
+
+
 .container>ul>li:nth-child(2){height: 450px;position: relative;}
 .txt2{position: absolute;top:70px;left: 30px;}
 .txt2 p{font-size: 39px;color: #FEFFFA;}
@@ -230,8 +267,20 @@ div.navWrap nav.gnb ul li a{
     margin-top: 20px;
     border: 1px solid #fff;
 }
+.bx-wrapper .bx-prev {
+    display: none;
+}
+.bx-wrapper .bx-next {
+    display: none;
+}
 
-
+#footer{}
+.footerwrap{width: 1200px;margin: 0 auto;background: #ffffff;}
+.footerwrap img{float: left;padding: 45px 0;}
+.footertop ul{float: right;}
+.footertop ul li{float: left;}
+.footertop ul li a{color: #666666;font-size: 14px;}
+.footerbottom{float: right;}
 
 
 
