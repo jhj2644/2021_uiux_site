@@ -96,7 +96,7 @@ div.navWrap nav.gnb ul li a{
 
 /* contents */
 .contents{
-    height: 1300px; /*나중에 삭제*/
+    
     min-width: 1200px;
     background-color: gray;
     background-image: url(../images/dot.png),url(../images/main_bg.jpg);
@@ -104,6 +104,7 @@ div.navWrap nav.gnb ul li a{
     background-size: auto,cover;
     background-position: center;
     padding-top: 65px;
+    padding-bottom: 100px;
 }
 .contents .title{
     width: 1200px;margin: 0 auto;height: 130px;_background: blue;
@@ -120,6 +121,9 @@ div.navWrap nav.gnb ul li a{
 
 .title_left p{font-size: 46px;color: #fff;font-weight: lighter;padding-bottom: 14px;letter-spacing: 0.005em;}
 .title_left h2{font-size: 75px;color: #fff;letter-spacing: -0.135em;}
+
+
+
 
 
 
@@ -142,39 +146,24 @@ div.navWrap nav.gnb ul li a{
 }
 
 
-.bx-wrapper .bx-controls-direction a {
-    position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    outline: 0;
-    width: 55px;
-    height: 70px;
-    text-indent: -9999px;
-    z-index: 9999;
-}
-.bx-wrapper .bx-prev {
-    left: 0px;
-    background: url(../images/slider_button01.png) no-repeat; 
-}
-
-.bx-wrapper .bx-controls-direction a {
-    position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    outline: 0;
-    width: 55px;
-    height: 70px;
-    text-indent: -9999px;
-    z-index: 9999;
-}
-.bx-wrapper .bx-next {
-    right: 0px;
-    background: url(../images/slider_button02.png) no-repeat;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+.container>ul>li:nth-child(1) .bx-pager-link.active{
     background: #0144AF;
 }
+
+
+
+
+
+
+.slider1wrap{position: relative;}
+.nextBtn, .prevBtn {
+    position: absolute;
+    top: 50%;margin-top: -50px;
+    cursor: pointer;
+}
+.nextBtn{right: 0;}
+.prevBtn{left: 0;}
+
 
 
 
@@ -222,18 +211,18 @@ div.navWrap nav.gnb ul li a{
 .container>ul>li:nth-child(5){
     background: #fff;
 }
-.middle03{padding-top: 22px;padding-left: 20px;}
-.middle03 .Snews{font-size: 22px;}
-.middle03 .news {float: left;margin-top: 20px;}
-.middle03 img{float: left;}
+.middle03{padding-top: 22px;padding-left: 20px;padding-right: 20px;}
+.middle03 .news_title{font-size: 22px;margin-bottom: 20px;}
+.middle03 .news {margin-bottom: 20px;}
+.middle03 .news>img{float: left;}
 .middle03 .news p{
-    float: right;padding: 0 15px;font-size: 14px;
+    float: right;font-size: 14px;
     color: #4C4C4C;letter-spacing: -0.045em;
     line-height: 20px;
     
 }
-.middle03 .sns ul{position: relative;bottom: -22px;right: -127px;}
-.middle03 .sns ul li{float: left;padding: 0 2px;}
+.middle03 .sns{width: 128px;margin-left: auto;}
+.middle03 .sns ul li{float: left;margin-left: 2px;}
 
 
 
@@ -267,19 +256,25 @@ div.navWrap nav.gnb ul li a{
     margin-top: 20px;
     border: 1px solid #fff;
 }
-.bx-wrapper .bx-prev {
-    display: none;
+.container>ul>li:nth-child(8) .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    top: 1px;
+    right: -400px;
+    width: 100%;
 }
-.bx-wrapper .bx-next {
-    display: none;
-}
+.container>ul>li:nth-child(8) .bx-pager-link.active{background: #FF2F21;}
+
 
 #footer{}
 .footerwrap{width: 1200px;margin: 0 auto;background: #ffffff;}
 .footerwrap img{float: left;padding: 45px 0;}
-.footertop ul{float: right;}
+.footertop{padding: 23px 0;float: right;padding-bottom: 5px;}
 .footertop ul li{float: left;}
-.footertop ul li a{color: #666666;font-size: 14px;}
+.footertop ul li a{color: #666666;font-size: 14px;padding: 17px;position: relative;}
+.footertop ul li a:after{
+    width: 1px;height: 12px;display: block;content: "";
+    background: #7c6a6a;position: absolute;top: 2px;right: 0;
+}
 .footerbottom{float: right;}
 
 

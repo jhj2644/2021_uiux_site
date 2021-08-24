@@ -19,9 +19,15 @@
 
     <script>
         $(document).ready(function(){
-            $(".slider1").bxSlider()
-            $(".slider2").bxSlider()
+            $(".slider1").bxSlider({controls:false})
+            $(".slider2").bxSlider({controls:false})
+            $(".university video").colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:394
+            })
         })
+
     </script>
     
 </head>
@@ -102,26 +108,35 @@
         <div class="container">
             <ul class="clearfix">
                 <li>
-                   
-                    <ul class="slider1">
-                        <li><img src="images/slide_bg01.png" alt="">
-                            <div class="txt">
-                                <p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p> 
-                                <a href="#" class="btn">자세히 보기</a>
-                            </div>                            
-                        </li>
-                        <li><img src="images/slide_bg02.png" alt="">
-                            <div class="txt">
-                                <p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p> 
-                                <a href="#" class="btn">자세히 보기</a>
-                            </div> </li>
-                        <li><img src="images/slide_bg03.png" alt="">
-                            <div class="txt">
-                                <p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p> 
-                                <a href="#" class="btn">자세히 보기</a>
-                            </div> 
-                        </li>
-                    </ul>
+                    <div class="slider1wrap">
+                        <ul class="slider1">
+                            <li><img src="images/slide_bg01.png" alt="">
+                                <div class="txt">
+                                    <p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p>
+                                    <a href="#" class="btn">자세히 보기</a>
+                                </div>
+                            </li>
+                            <li><img src="images/slide_bg02.png" alt="">
+                                <div class="txt">
+                                    <p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p>
+                                    <a href="#" class="btn">자세히 보기</a>
+                                </div> </li>
+                            <li><img src="images/slide_bg03.png" alt="">
+                                <div class="txt">
+                                    <p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p>
+                                    <a href="#" class="btn">자세히 보기</a>
+                                </div>
+                            </li>
+                        
+                        </ul>
+                        
+                        <div class="prevBtn">
+                            <img src="./images/slider_button01.png" alt="">
+                        </div>
+                        <div class="nextBtn">
+                            <img src="./images/slider_button02.png" alt="">
+                        </div>
+                    </div>
                 </li>
 
                 <li>
@@ -193,7 +208,7 @@
 
                 <li>
                     <div class="middle03">
-                        <a href="#"><p class="Snews"><b>SNS NEWS</b></p></a>
+                        <a href="#"><p class="news_title"><b>SNS NEWS</b></p></a>
                         <div class="news clearfix">
                             <img src="./images/middle03_image.png" alt="">
                             <p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관...</p>
@@ -219,8 +234,8 @@
                 <li>
                     
                         <img src="images/bg04.png" alt="">
-                        <a href="#"><img src="images/bg04_icon.png" alt="" class="player"></a>
-                   
+                        <a href="https://www.youtube.com/embed/XODXtaIfxhQ" class="university video"><img src="images/bg04_icon.png" alt="" class="player"></a>
+                        
                 </li>
 
                 <li>
@@ -251,11 +266,11 @@
 
     <!-- footer start -->
     <footer id="footer">
-        <div class="footerwrap">
+        <div class="footerwrap clearfix">
             <img src="./images/hanguk_logo.png" alt="">
 
-            <div class="footerinner">
-                <div class="footertop clearfix">
+            <div class="footerinner clearfix">
+                <div class="footertop">
                     <ul class="clearfix">
                         <li><a href="#"></a>회사소개</li>
                         <li><a href="#"></a>한국 대학교</li>
