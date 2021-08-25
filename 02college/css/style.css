@@ -196,17 +196,20 @@ div.navWrap nav.gnb ul li a{
 .container>ul>li:nth-child(4){
     background-image: url(../images/bg04_back.png);
 }
-.middle02{padding-top: 22px;padding-left: 20px;}
-.middle02 .notice{display: block;font-size: 22px;color: #FEFEFF;position: relative;}
-.middle02 .notice:after{
+.notice{padding-top: 22px;padding-left: 20px;padding-right: 20px;}
+.notice h2{
+    font-size: 22px;color: #FEFEFF;
+    margin-bottom: 20px;position: relative;
+}
+.notice h2:after{
     content: "";width: 260px;height: 2px;
     display: block;background: #FFFFFF;
     position: absolute;top: 40px;
 }
-.middle02 ul{margin-top: 30px;}
-.middle02 ul li{float: left;position: relative;padding: 9px 0;width: 180px;}
-.middle02 a{color: #fff;font-size: 13px;letter-spacing: -0.03em;}
-.middle02 span{position: absolute;right: -70px;}
+.notice ul{margin-top: 25px;}
+.notice ul li{float: left;position: relative;padding: 9px 0;width: 180px;}
+.notice a{color: #fff;font-size: 13px;letter-spacing: -0.03em;}
+.notice span{position: absolute;right: -70px;}
 
 
 /* container5 */
