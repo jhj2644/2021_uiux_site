@@ -33,7 +33,7 @@ body{
 .headerTop h3{right: 20px;}
 div.snsMenu{display: flex;justify-content: space-between;align-items: center;}
 div.snsMenu h3{padding: 0 15px 0 0;font-size: 27px;}
-div.snsMenu img{padding: 0 4px 0 0;}
+div.snsMenu a{padding: 0 4px 0 0;}
 div.snsMenu img:last-child{padding-right: 0 ;}
 
 /* div.nav ul{
@@ -72,6 +72,7 @@ div.box{width: 100%;height: 5px;background: #FFEE55;margin-bottom: 56px;}
 .bxPager a:hover{color: #414141;background: #fff;}
 .bxPager a.active{color: #414141;background: #fff;}
 .bxPager a{border-bottom: 1px solid #fff;}
+.slider{height: 308px;}
 
 
 fieldset{border: 0;}
@@ -92,8 +93,13 @@ fieldset{border: 0;}
             width: 100%;
             height: 40px;font-size: 1em;
             border-radius: 5px;text-indent: 10px;
+            
         }
-        .searchimg{display: block;background-image: url(../images/search\ red.png);}
+        .form .reserve input{
+            background-image: url(../images/search_red.png);text-indent: -9999px;
+            width: 278px;height: 38px;border: none;
+            margin-top: 10px;
+        }
 
 
 
