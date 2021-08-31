@@ -1,6 +1,7 @@
 @charset "utf-8";
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
 }
 /* header start */
 .headerTopWrap{
@@ -55,15 +56,26 @@ div.nav ul li:first-child{border-left: 1px solid #E9E9E9;}
 div.nav ul li:nth-child(4){position: relative;}
 div.nav ul li:nth-child(4) img{display: block;position: absolute;top: 15px;right: 28px;}
 
-div.box{width: 100%;height: 5px;background: #FFEE55;margin-bottom: 56px;}
+div.box{width: 100%;height: 5px;background: #FFEE55;_margin-bottom: 56px;}
 
 /* header end  */
 
 /* contents start  */
 
 /* .contentWrap{background: url(../images/bg_sky.png) no-repeat center;height: 1236px;} */
-.sliderWrap{display: flex;}
-.content_1st{width: 980px;margin: 0 auto;}
+.contentWrap{
+    _background-color: gray;
+    background-image: url(../images/bg_sky.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    padding-bottom: 100px;
+    height: 1237px;
+}
+
+
+.sliderWrap{display: flex;padding: 56px 0 0 0;}
+.content_1st{width: 980px;margin: 0 auto;position: relative;}
 .sliderWrap{width: 482px;position: relative;}
 .bxPager img{float: left;padding:0 8px}
 .bxPager a{
@@ -72,34 +84,57 @@ div.box{width: 100%;height: 5px;background: #FFEE55;margin-bottom: 56px;}
 .bxPager a:hover{color: #414141;background: #fff;}
 .bxPager a.active{color: #414141;background: #fff;}
 .bxPager a{border-bottom: 1px solid #fff;}
-.slider{height: 308px;}
+
+.slider{width: 352px;}
+.sldierform{width: 352px;height: 300px;}
+.sliderLi{height: 300px;padding: 25px 20px;}
+
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    width: 352px;
+}
 
 
 fieldset{border: 0;}
         .blind{display: block;position: absolute;left: 0;top: -9999px;}
-        .form{width: 400px;margin: 0 auto;}
+        .form{width: 352px;margin: 0 auto;}
         .form label{display: block;padding: 5px 0;}
         .form select{
-            width: 100%;height: 40px;font-size: 1em;
+            width: 276px;height: 30px;font-size: 1em;
             border-radius: 5px;text-indent: 10px;
         }
         .form .left,
-        .form .right{width: 195px;float: left;}
+        .form .right{width: 137px;float: left;}
 
         .form .left{margin-right: 10px;}
 
         .form .left input,
         .form .right input{
-            width: 100%;
-            height: 40px;font-size: 1em;
+            width: 130px;
+            height: 30px;font-size: 1em;
             border-radius: 5px;text-indent: 10px;
             
         }
         .form .reserve input{
             background-image: url(../images/search_red.png);text-indent: -9999px;
             width: 278px;height: 38px;border: none;
-            margin-top: 10px;
+            margin-top: 20px;
         }
+
+.biglogo{position: absolute;top: 56px;right: 80px;}  
+.biglogo h1{font-size: 70px;}    
+.biglogo h3{font-size: 30px;font-weight: normal;margin-top: 15px;}
+.underline{
+    width: 83px;height: 5px;background: #000;
+    position: absolute;
+    right: 10px;top: 90px;
+}
+
+
 
 
 
