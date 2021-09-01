@@ -6,20 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tour</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script>
         $(document).ready(function(){
             $('.slider').bxSlider({
                 pagerCustom:'.bxPager',
-                mode:'vertical'
+                mode:'vertical',touchEnabled:false
             });
-        });
+            
+     
+            var myslide = $('.bxsliderwrap').bxSlider({controls:false,pager:false});
+            
+            $('.nextBtn').click(function(){
+                myslide.goToNextSlide();
+            });
+            $('.prevBtn').click(function(){
+                myslide.goToPrevSlide();
+            });
+
+            var myslide2 = $('.bxsliderwrap2').bxSlider({controls:false,pager:false});
+            
+            $('.nextBtn2').click(function(){
+                myslide2.goToNextSlide();
+            });
+            $('.prevBtn2').click(function(){
+                myslide2.goToPrevSlide();
+            });
+        })
+
+
+
+
     </script>
 </head>
 <body>
@@ -27,7 +52,7 @@
     <header id="header">
         <div class="headerTopWrap">
             <div class="headerTop">
-                <h1><a href="#"><img src="../04tour/images/hi travel logo.png" alt=""></a></h1>
+                <h1><a href="#"><img src="images/hi travel logo.png" alt=""></a></h1>
                 <div class="search">
                     <form action="#" method="post">
                         <label for="search" class="searchTitle">search</label>
@@ -37,10 +62,10 @@
                 </div>
                 <div class="snsMenu">
                     <h3>+82 02 1234 5678</h3>
-                    <a href="#"><img src="../04tour/images/link_01.png" alt=""></a>
-                    <a href="#"><img src="../04tour/images/link_02.png" alt=""></a>
-                    <a href="#"><img src="../04tour/images/link_03.png" alt=""></a>
-                    <a href="#"><img src="../04tour/images/link_04.png" alt=""></a>
+                    <a href="#"><img src="images/link_01.png" alt=""></a>
+                    <a href="#"><img src="images/link_02.png" alt=""></a>
+                    <a href="#"><img src="images/link_03.png" alt=""></a>
+                    <a href="#"><img src="images/link_04.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -51,7 +76,7 @@
                 <li><a href="#">렌트카</a></li>
                 <li>
                     <a href="#">여행TIP</a>
-                    <img src="../04tour/images/new.png" alt="">
+                    <img src="images/new.png" alt="">
                 </li>
                 <li><a href="#">회사소개</a></li>
                 <li><a href="#">커뮤니티</a></li>
@@ -63,14 +88,16 @@
 
     <!-- contents start  -->
     <div class="contentWrap">
+        
         <div class="content_1st">
+            <img src="images/ballon.png" alt="" class="ballon">
             <div class="sliderWrap">
                 <div class="sliderPager">
                     <div class="bxPager">
-                        <a href="#" data-slide-index="0"><img src="../04tour/images/airplane logo_hover.png" alt="">공항예약</a>
-                        <a href="#" data-slide-index="1"><img src="../04tour/images/hotel logo.png" alt="">호텔예약</a>
-                        <a href="#" data-slide-index="2"><img src="../04tour/images/car logo.png" alt="">렌트카</a>
-                        <a href="#" data-slide-index="3"><img src="../04tour/images/beach logo.png" alt="">휴양지</a>
+                        <a href="#" data-slide-index="0"><img src="images/airplane logo_hover.png" alt="">공항예약</a>
+                        <a href="#" data-slide-index="1"><img src="images/hotel logo.png" alt="">호텔예약</a>
+                        <a href="#" data-slide-index="2"><img src="images/car logo.png" alt="">렌트카</a>
+                        <a href="#" data-slide-index="3"><img src="images/beach logo.png" alt="">휴양지</a>
                     </div>
                 </div>
 
@@ -103,7 +130,7 @@
                                         <li>
                                             <div class="left">
                                                 <label for="grade">좌석등급</label>
-                                                <select name="grade" id="grade">
+                                                <select name="grade" id="grade" class="grade">
                                                     <option value="">선택</option>
                                                     <option value="비즈니스">비즈니스</option>
                                                     <option value="이코노미">이코노미</option>
@@ -149,54 +176,7 @@
                                         <li>
                                             <div class="left">
                                                 <label for="grade">좌석등급</label>
-                                                <select name="grade" id="grade">
-                                                    <option value="">선택</option>
-                                                    <option value="비즈니스">비즈니스</option>
-                                                    <option value="이코노미">이코노미</option>
-                                                </select>
-                                            </div>
-                                            <div class="right">
-                                                <label for="num">인원</label>
-                                                <input type="number" id="num" placeholder="1">
-                            
-                                            </div>
-                            
-                                        </li>
-                                    </ul>
-                                </fieldset>
-                                <div class="reserve">
-                                    <input type="submit" value="예약하기">
-                                </div>
-                            </form>
-                        </li>
-                        <li class="sliderLi">
-                            <form action="#" class="form">
-                                <fieldset>
-                                    <legend class="blind">여행일정</legend>
-                                    <ul>
-                                        <li>
-                                            <label for="golo">가고싶은 나라를 선택하세요.</label>
-                                            <select name="golo" id="golo">
-                                                <option value="">선택하세요</option>
-                                                <option value="미국">미국</option>
-                                                <option value="일본">일본</option>
-                                                <option value="중국">중국</option>
-                                            </select>
-                                        </li>
-                                        <li class="clearfix">
-                                            <div class="left">
-                                                <label for="sdate">출발일</label>
-                                                <input type="date" id="sdate">
-                                            </div>
-                                            <div class="right">
-                                                <label for="edate">도착일</label>
-                                                <input type="date" id="edate">
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="left">
-                                                <label for="grade">좌석등급</label>
-                                                <select name="grade" id="grade">
+                                                <select name="grade" id="grade" class="grade">
                                                     <option value="">선택</option>
                                                     <option value="비즈니스">비즈니스</option>
                                                     <option value="이코노미">이코노미</option>
@@ -243,7 +223,54 @@
                                         <li>
                                             <div class="left">
                                                 <label for="grade">좌석등급</label>
-                                                <select name="grade" id="grade">
+                                                <select name="grade" id="grade" class="grade">
+                                                    <option value="">선택</option>
+                                                    <option value="비즈니스">비즈니스</option>
+                                                    <option value="이코노미">이코노미</option>
+                                                </select>
+                                            </div>
+                                            <div class="right">
+                                                <label for="num">인원</label>
+                                                <input type="number" id="num" placeholder="1">
+                            
+                                            </div>
+                            
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                                <div class="reserve">
+                                    <input type="submit" value="예약하기">
+                                </div>
+                            </form>
+                        </li>
+                        <li class="sliderLi">
+                            <form action="#" class="form">
+                                <fieldset>
+                                    <legend class="blind">여행일정</legend>
+                                    <ul>
+                                        <li>
+                                            <label for="golo">가고싶은 나라를 선택하세요.</label>
+                                            <select name="golo" id="golo">
+                                                <option value="">선택하세요</option>
+                                                <option value="미국">미국</option>
+                                                <option value="일본">일본</option>
+                                                <option value="중국">중국</option>
+                                            </select>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="left">
+                                                <label for="sdate">출발일</label>
+                                                <input type="date" id="sdate">
+                                            </div>
+                                            <div class="right">
+                                                <label for="edate">도착일</label>
+                                                <input type="date" id="edate">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="left">
+                                                <label for="grade">좌석등급</label>
+                                                <select name="grade" id="grade" class="grade">
                                                     <option value="">선택</option>
                                                     <option value="비즈니스">비즈니스</option>
                                                     <option value="이코노미">이코노미</option>
@@ -273,21 +300,149 @@
                 <h3>지금, 여행이 떠나고 싶다면?<br>Hi와 여행을 떠나자!</h3>
             </div>
 
-            <div class="fjwrap">
+            <div class="fjwrap clearfix">
                 <div class="france">
-
+                    <img src="images/france.png" alt="">
+                    <div class="francewrap">
+                        <div class="francewon">
+                            <ul class="clearfix">
+                                <li>프랑스</li>
+                                <li>1,900,000 원~</li>
+                                <li><a href="#"><img src="images/here.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="japan">
-                       
+                    <img src="images/japan.png" alt="">
+                    <div class="japanwrap">
+                        <div class="japanwon">
+                            <ul class="clearfix">
+                                <li>일본</li>
+                                <li>890,000 원~</li>
+                                <li><a href="#"><img src="images/here.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>   
                 </div>
             </div>
-            
+        </div>
 
+
+
+        <div class="content_2st">
+            <div class="bxslider">
+                <ul class="clearfix">
+                    <li>
+                        <ul class="bxsliderwrap">
+                            <li>
+                                <img src="images/hillton_paris.png" alt="">
+                                <div class="pariswrap">
+                                    <p>HILLTON HOTEL (PARIS)</p>
+                                    <img src="images/star.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/hillton_paris.png" alt="">
+                                <div class="pariswrap">
+                                    <p>HILLTON HOTEL (PARIS)</p>
+                                    <img src="images/star.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/hillton_paris.png" alt="">
+                                <div class="pariswrap">
+                                    <p>HILLTON HOTEL (PARIS)</p>
+                                    <img src="images/star.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="nextBtn">
+                            <img src="images/right.png" alt="">
+                        </div>
+                        <div class="prevBtn">
+                            <img src="images/left.png" alt="">
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <ul class="bxsliderwrap2">
+                            <li>
+                                <img src="images/disney_paris.png" alt="">
+                                <div class="diswrap">
+                                    <p>관광명소(디즈니랜드)</p>
+                                    <img src="images/star.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/disney_paris.png" alt="">
+                                <div class="diswrap">
+                                    <p>관광명소(디즈니랜드)</p>
+                                    <img src="images/star.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/disney_paris.png" alt="">
+                                <div class="diswrap">
+                                    <p>관광명소(디즈니랜드)</p>
+                                    <img src="images/star.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="nextBtn2">
+                            <img src="images/right.png" alt="">
+                        </div>
+                        <div class="prevBtn2">
+                            <img src="images/left.png" alt="">
+                        </div>
+                    </li>
+
+                    <li>
+                        <ul class="parisWeather">
+                            <li>
+                                <h2>PARIS</h2>
+                                <img src="images/weather.png" alt="">
+                                <div class="weather">
+                                    <h3>20℃<span class="cloud">구름조금</span></h3>
+                                    <p>습도 60% 바람 남남동 2m/s</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul class="good">
+                            <li>
+                                <img src="images/good.png" alt="">
+                                <div class="goodparis">
+                                    <h3>facebook<span class="gd">여행후기</span></h3>
+                                    <p>(임정희님)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
     </div>
     
 
+    <i class="fas fa-plane"></i>
 
+    <i class="fas fa-hotel"></i>
+
+    <i class="fas fa-car-side"></i>
+
+    <i class="fas fa-umbrella-beach"></i>
+
+    <i class="fas fa-home"></i>
+
+    <i class="fas fa-utensils"></i>
+
+    <i class="far fa-thumbs-up"></i>
 
 
 

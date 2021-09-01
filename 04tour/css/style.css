@@ -60,22 +60,26 @@ div.box{width: 100%;height: 5px;background: #FFEE55;_margin-bottom: 56px;}
 
 /* header end  */
 
-/* contents start  */
 
-/* .contentWrap{background: url(../images/bg_sky.png) no-repeat center;height: 1236px;} */
+
+
+
+/* contents start  */
 .contentWrap{
     _background-color: gray;
     background-image: url(../images/bg_sky.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     padding-bottom: 100px;
     height: 1237px;
 }
 
 
-.sliderWrap{display: flex;padding: 56px 0 0 0;}
-.content_1st{width: 980px;margin: 0 auto;position: relative;}
+/* content_1st  */
+.ballon{position: absolute;right: 5px;top: 100px;}
+.sliderWrap{display: flex;padding: 56px 0 0 0;margin-bottom: 15px;}
+.content_1st{width: 980px;margin: 0 auto;position: relative;margin-bottom: 17px;position: relative;}
 .sliderWrap{width: 482px;position: relative;}
 .bxPager img{float: left;padding:0 8px}
 .bxPager a{
@@ -84,10 +88,11 @@ div.box{width: 100%;height: 5px;background: #FFEE55;_margin-bottom: 56px;}
 .bxPager a:hover{color: #414141;background: #fff;}
 .bxPager a.active{color: #414141;background: #fff;}
 .bxPager a{border-bottom: 1px solid #fff;}
+.bxPager a:last-child{border-bottom: 0;}
 
 .slider{width: 352px;}
 .sldierform{width: 352px;height: 300px;}
-.sliderLi{height: 300px;padding: 25px 20px;}
+.sliderLi{height: 300px;padding: 25px 34px;}
 
 .bx-wrapper {
     -moz-box-shadow: none;
@@ -96,7 +101,10 @@ div.box{width: 100%;height: 5px;background: #FFEE55;_margin-bottom: 56px;}
     border: none;
     background: #fff;
     width: 352px;
+    height: 308px;
+    margin-bottom: 0;
 }
+
 
 
 fieldset{border: 0;}
@@ -124,6 +132,9 @@ fieldset{border: 0;}
             width: 278px;height: 38px;border: none;
             margin-top: 20px;
         }
+        .left select.grade{width: 130px;}
+
+
 
 .biglogo{position: absolute;top: 56px;right: 80px;}  
 .biglogo h1{font-size: 70px;}    
@@ -133,6 +144,85 @@ fieldset{border: 0;}
     position: absolute;
     right: 10px;top: 90px;
 }
+
+
+.fjwrap{position: relative;}
+.fjwrap>div{float: left;}
+.france{margin-right: 17px;}
+.francewrap{
+    background: #152630;width: 233px;height: 50px;padding: 15px 20px;
+    display: flex;justify-content: center;align-items: center;
+}
+.francewon ul li{float: left;position: relative;}
+.francewon ul li:first-child{font-size: 16px;color: #fff;padding-right: 14px;line-height: 20px;}
+.francewon ul li:nth-child(2){font-size: 18px;color: #6ABC5F;padding-right: 10px;line-height: 20px;}
+.francewon ul li img{position: absolute;top: 5px;}
+
+.japanwrap{
+    background: #152630;width: 233px;height: 50px;padding: 15px 20px;
+    display: flex;justify-content: center;align-items: center;
+}
+.japanwon ul li{float: left;position: relative;}
+.japanwon ul li:first-child{font-size: 16px;color: #fff;padding-right: 43px;line-height: 20px;}
+.japanwon ul li:nth-child(2){font-size: 18px;color: #6ABC5F;padding-right: 10px;line-height: 20px;}
+.japanwon ul li img{position: absolute;top: 5px;}
+
+
+
+/* content_2st */
+.content_2st{width: 980px;margin: 0 auto;}
+/* .paris{width: 233px;height: 240px;} */
+.pariswrap{width: 233px;height: 65px;background: #529252;padding: 10px 12px;}
+.pariswrap p{font-size: 18px;color: #fff;margin-bottom: 3px;}
+
+.content_2st .bx-wrapper{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    width: 233px;
+    height: 240px;
+    margin-right: 17px;
+}
+
+.bxslider>ul>li{float: left;margin-right: 17px;width: calc( (100% - 51px ) / 4 );}
+.bxslider>ul>li:last-child{margin-right: 0;}
+.bxsliderwrap{position: relative;}
+.nextBtn,.prevBtn{position: absolute;cursor: pointer;}
+.nextBtn{top: 68px;left: 199px;}
+.prevBtn{top: 68px;left: 0;}
+
+
+.bxsliderwrap2{position: relative;}
+.diswrap{width: 233px;height: 65px;background: #152630;padding: 10px 12px;}
+.diswrap p{font-size: 18px;color: #fff;margin-bottom: 3px;}
+.nextBtn2,.prevBtn2{position: absolute;cursor: pointer;}
+.nextBtn2{top: 68px;left: 449px;}
+.prevBtn2{top: 68px;left: 250px;}
+
+
+
+
+.parisWeather{position: relative;}
+.weather ul li{float: left;}
+.parisWeather li h2{
+    font-size: 20px;color: #fff;font-weight: normal;
+    position: absolute;top: 13px;right: 93px
+    
+}
+.weather{width: 233px;height: 65px;background: #152630;padding: 5px 12px;}
+.weather h3{font-size: 20px;color: #fff;font-weight: normal;}
+.cloud{font-size: 16px;color: #fff;font-weight: normal;margin-left: 5px;}
+.weather p{font-size: 16px;color: #BBBBBD;}
+
+
+.goodparis{width: 233px;height: 65px;background: #44619D;padding: 5px 12px;}
+.goodparis h3{font-size: 17px;color: #fff;font-weight: normal;}
+.gd{margin-left: 5px;font-weight: normal;}
+.goodparis p{font-size: 15px;color: #fff;font-weight: normal;}
+
+
 
 
 
