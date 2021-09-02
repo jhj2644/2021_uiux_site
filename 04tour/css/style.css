@@ -274,6 +274,7 @@ fieldset{border: 0;}
 .circle{
     position: absolute;width: 30px;height: 30px;border-radius: 50%;
     border: 2px solid #fff;top: 50%;left: 50%;transform: translate(-50%,-50%);
+    _box-shadow: 0 0 10px #000;
 }
 .circle .bar1, .circle .bar2{
     width: 10px;height: 2px;background: #fff;
@@ -281,6 +282,7 @@ fieldset{border: 0;}
     position: absolute;
     top: 50%;left: 50%;
     transform: translate(-50%,-50%);
+
 }
 .vacationwrap:hover .circle{
     transition: 0.3s;
