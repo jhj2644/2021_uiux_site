@@ -329,7 +329,7 @@ fieldset{border: 0;}
 
 /* subpage  */
 /* sub company  */
-body.sub{background: #ccc;}
+body.sub{background: #ECECEC;}
 .subcontent .subimg{
     height: 200px;
     background: skyblue;
@@ -339,28 +339,36 @@ body.sub{background: #ccc;}
     background-size: cover;
 }
 .subcontent .subimgtitle{text-align: center;transform: translateY(-30px);}
-.subcontent .subimgtitle h3{font-size: 2em;text-shadow: 0 0 10px #fff;}
+.subcontent .subimgtitle h3{
+    font-size: 2em;text-shadow: 0 0 10px #fff;
+    _color: #fff;
+}
 .subcontent .subimgtitle p{text-shadow: 0 0 10px #fff;}
 .subcontent .subimgtitle h3:after{
-    content: "";display: block;width: 80%;height: 2px;background: #000;
+    content: "";display: block;
+    width: 80%;height: 2px;
+    background: #000;
     margin: 10px auto;
 }
 .container{width: 980px;margin: 0 auto;padding: 30px 0;}
-.container img{display: block;margin:0 auto;}
+.container img{display: block;margin:0 auto;padding: 20px 0;}
 .container{
-    border: 1px solid #000;
-    border-top: 5px solid #0664a1;
-    border-bottom: 5px solid #0664a1;
+    _border: 1px solid #000;
+    border-top: 5px solid #FFEE55;
+    border-bottom: 5px solid #FFEE55;
     position: relative;top: -50px;
     background: #fff;
 }
-.location{width: 860px;margin: 0 auto;font-size: 14px;}
-.subcontent.company .subimg{
-    background-image: url(../images/bg_sky.png);
-    
+.location{
+    width: 860px;margin: 0 auto;font-size: 14px;
+    position: absolute;top: -30px;left: 0;
+    color: #fff;
 }
+.subcontent.company .subimg{
+    background-image: url(../images/companyinfo.png);  
+}
+
 .subcontent.city .subimg{
-    background-image: url(../images/ballon.png);
-    
+    background-image: url(../images/citytour_img.png);  
 }
 
