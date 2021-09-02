@@ -165,27 +165,30 @@ fieldset{border: 0;}
     
 }
 
-
-.fjwrap{position: relative;}
-.fjwrap>div{float: left;}
-.france{margin-right: 17px;}
-.francewrap{
-    background: #152630;width: 233px;height: 50px;padding: 15px 20px;
-    display: flex;justify-content: center;align-items: center;
+/* france / japan  */
+.fjwrap{position: relative;width: 980px;margin: 0 auto;}
+.fjwrap ul li{float: left;_width: calc( ( 483px - 17px ) / 2 );}
+.francewrap{margin-right: 17px;}
+.fjwrap ul li:last-child{margin-right: 0;}
+.francewon{
+    background: #152630;
+    width: 233px;height: 50px;
+    padding: 15px 20px;
 }
 .francewon ul li{float: left;position: relative;}
 .francewon ul li:first-child{font-size: 16px;color: #fff;padding-right: 14px;line-height: 20px;}
 .francewon ul li:nth-child(2){font-size: 18px;color: #6ABC5F;padding-right: 10px;line-height: 20px;}
-.francewon ul li img{position: absolute;top: 5px;}
+.francewon ul li img{position: absolute;top: 4px;}
 
-.japanwrap{
-    background: #152630;width: 233px;height: 50px;padding: 15px 20px;
-    display: flex;justify-content: center;align-items: center;
+.japanwon{
+    background: #152630;
+    width: 233px;height: 50px;
+    padding: 15px 20px;
 }
 .japanwon ul li{float: left;position: relative;}
-.japanwon ul li:first-child{font-size: 16px;color: #fff;padding-right: 43px;line-height: 20px;}
+.japanwon ul li:first-child{font-size: 16px;color: #fff;padding-right: 40px;line-height: 20px;}
 .japanwon ul li:nth-child(2){font-size: 18px;color: #6ABC5F;padding-right: 10px;line-height: 20px;}
-.japanwon ul li img{position: absolute;top: 5px;}
+.japanwon ul li img{position: absolute;top: 4px;}
 
 
 
@@ -254,6 +257,7 @@ fieldset{border: 0;}
 .vacationwrap img{
     width: 100%;
     transition: 0.3s;
+    opacity: 0.9;
 }
 .vacationwrap:hover img{
     transform: scale(1.1);
