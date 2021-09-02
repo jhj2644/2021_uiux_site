@@ -38,15 +38,7 @@ div.snsMenu h3{padding: 0 15px 0 0;font-size: 27px;}
 div.snsMenu a{padding: 0 4px 0 0;}
 div.snsMenu img:last-child{padding-right: 0 ;}
 
-/* div.nav ul{
-    display: flex;justify-content: space-between;align-items: center;
-    width: 980px;margin: 0 auto;height: 59px;position: relative;
-}
-div.nav ul li{width: calc(980px / 6);text-align: center;}
-div.nav ul li:after{
-    content: "";display: block;position: absolute;
-    width: 1px;height: 59px;background: #E9E9E9;top: 0px;
-} */
+
 div.nav{background: #fff;}
 div.nav ul{width: 980px;margin: 0 auto;}
 div.nav ul li{
@@ -254,14 +246,70 @@ fieldset{border: 0;}
 
 /* content_3rd */
 .content_3rd{width: 980px;margin: 0 auto;}
-.content_3rd .wow ul li{float: left;margin-right: 17px;width: calc( (100% - 51px ) / 4 );}
+.content_3rd .wow ul li{float: left;margin-right: 17px;width: calc( (100% - 51px ) / 4 );overflow: hidden;}
 .content_3rd .wow ul li:last-child{margin-right: 0;}
+.content_3rd .vacationwrap{
+    position: relative;
+}
+.vacationwrap img{
+    width: 100%;
+    transition: 0.3s;
+}
+.vacationwrap:hover img{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+}
+.vacationwrap:hover .vacation{top: 142px;}
 
+.vacation{
+    position: absolute;top: 15px;left: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+.content_3rd a{font-size: 20px;color: #fff;text-shadow: 0 0 10px #000;}
+.content_3rd i{margin-right: 3px;}
+.content_3rd p{font-size: 14px;color: #fff;margin-top: 8px;}
+
+
+.circle{
+    position: absolute;width: 30px;height: 30px;border-radius: 50%;
+    border: 2px solid #fff;top: 50%;left: 50%;transform: translate(-50%,-50%);
+}
+.circle .bar1, .circle .bar2{
+    width: 10px;height: 2px;background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+.vacationwrap:hover .circle{
+    transition: 0.3s;
+    animation-duration: 0.3s;
+}
+
+.circle .bar1{transform: translate(-50%,-50%) rotate(90deg);}
+
+.vacationwrap:hover .circle{
+    animation-name: ani;
+}
+@keyframes ani{
+    from{transform: translate(-50%,-50%);}
+    to{transform: translate(-50%,-50%) rotate(90deg);}
+}
+
+.vacationwrap .bg{
+    width: 100%;height: 100%;background-color: #000;
+    position: absolute;top: 0;
+    opacity: 0;transition: 0.3s;
+}
+.vacationwrap:hover .bg{opacity: 0.5;}
 
 
 
 
 /* contents end  */
+
+
 
 
 
@@ -302,3 +350,4 @@ body.sub{background: #ccc;}
     background-image: url(../images/ballon.png);
     
 }
+

@@ -12,9 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/animate.css">
     
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="./js/wow.js"></script>
     <script>
         $(document).ready(function(){
             $('.slider').bxSlider({
@@ -40,11 +42,9 @@
             $('.prevBtn2').click(function(){
                 myslide2.goToPrevSlide();
             });
+
+            new WOW().init();
         })
-
-
-
-
     </script>
 </head>
 <body>
@@ -448,11 +448,17 @@
         <div class="content_3rd">
             <div class="wow">
                 <ul class="clearfix">
-                    
-                    <li>
+
+                    <li class="wow fadeInDown" data-wow-delay="0" data-wow-offset="0">
                         <div class="vacationwrap">
                             <img src="images/air.png" alt="">
-                            <div class="circle"></div>
+                            <div class="bg"></div>
+                            <a href="#">
+                                <div class="circle">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                </div>
+                            </a>
                             <div class="vacation">
                                 <div class="info">
                                     <a href="#" data-slide-index="0">
@@ -465,10 +471,16 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="wow fadeInDown" data-wow-delay="0.1s" data-wow-offset="0">
                         <div class="vacationwrap">
                             <img src="images/food.png" alt="">
-                            <div class="circle"></div>
+                            <div class="bg"></div>
+                            <a href="#">
+                                <div class="circle">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                </div>
+                            </a>
                             <div class="vacation">
                                 <div class="info">
                                     <a href="#" data-slide-index="0">
@@ -481,10 +493,16 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="wow fadeInDown" data-wow-delay="0.2s" data-wow-offset="0">
                         <div class="vacationwrap">
                             <img src="images/hotel.png" alt="">
-                            <div class="circle"></div>
+                            <div class="bg"></div>
+                            <a href="#">
+                                <div class="circle">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                </div>
+                            </a>
                             <div class="vacation">
                                 <div class="info">
                                     <a href="#" data-slide-index="0">
@@ -497,10 +515,16 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="wow fadeInDown" data-wow-delay="0.3s" data-wow-offset="0">
                         <div class="vacationwrap">
                             <img src="images/horse.png" alt="">
-                            <div class="circle"></div>
+                            <div class="bg"></div>
+                            <a href="#">
+                                <div class="circle">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                </div>
+                            </a>
                             <div class="vacation">
                                 <div class="info">
                                     <a href="#" data-slide-index="0">
