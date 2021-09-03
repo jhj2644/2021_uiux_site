@@ -1,7 +1,7 @@
 @charset "utf-8";
 body{
     font-family: 'Noto Sans KR', sans-serif;
-    overflow-x: hidden;
+    _overflow-x: hidden;
     min-width: 980px;
 }
 /* header start */
@@ -390,4 +390,22 @@ body.sub{background: #ECECEC;}
 .subcontent.city .subimg{
     background-image: url(../images/citytour_img.png);  
 }
+.subcontent.company{_position: relative;}
+.subwrap{background: #000;}
+.submenuwrap{
+    width: 980px;height: 30px;
+    top:0;transition: 0.3s; min-width: 980px;position: relative;
+    margin: 0 auto;
+}
+.submenu{position: absolute;background: orange;left: calc( 50% + 100px);}
+
+.submenu ul li{float: left;margin-right: 15px;}
+.submenu ul li a{font-size: 15px;color: #C1C2C7;}
+/* .submenu ul{}
+.submenu ul li{
+    float: left;margin-right: 15px;
+    position: absolute;right: 0;
+}
+.submenu ul li a{font-size: 15px;color: #C1C2C7;}
+.nav:hover .submenu{background: #313131;height: 30px;} */
 
