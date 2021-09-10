@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+html,body{height: 100%;}
+
+#header_top .logo{padding: 0 10px;}
+
+/* .sldierWrap li img{width: 100%;} */
+
+.bx-wrapper {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border: 0 none;
+    background: #fff;
+}
+
+
+
+
+
+
+/* pc버전 */
+@media screen and ( min-width:700px ){
+    #main_header{height: 1950px;background: #ddd;}
+
+    .headerwrap{
+        width: 100%;background: #fff;height: 80px;
+        display: flex;justify-content: center;align-items: center;
+        position: fixed;z-index: 1;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    }
+
+    #header_top{
+        width: 1240px;z-index: 1;
+        position: fixed;left: 50%;transform: translateX(-50%);_top: 20px;
+        display: flex;justify-content: space-between;align-items: center;
+    }
+    
+    #header_top .gnb{}
+    .gnb li:hover {transform: scale(1.1);}
+    #header_top .gnb li{float: left;}
+    #header_top .gnb li>a{display: block;line-height: 50px;text-align: center;padding: 0 30px;}
+    .toggle{display: none;}
+
+    .sldierWrap .li_1st,.sldierWrap .li_2st{
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sldierWrap .li_1st{background-image: url(../images/main_banner01.jpg);}
+    .sldierWrap .li_2st{background-image: url(../images/main_banner02.jpg);}
+
+    
+}
+
+
+
+
+/* 모바일 버전 */
+@media screen and ( max-width:699px ){
+    #main_header{background: #ddd;}
+
+    .logo img{width: 80%;}
+
+    #header_top{
+        padding: 0 16px;
+        position: fixed;width: 100%;
+        display: flex;justify-content: space-between;align-items: center;
+        z-index: 1;
+    }
+    .headerwrap{
+        width: 100%;background: #fff;height: 80px;
+        display: flex;justify-content: center;align-items: center;
+        position: fixed;z-index: 1;
+    }
+
+
+
+    
+    #header_top .gnb{display: none;}
+
+    .toggle{display: block;}
+    .toggle{
+        width: 40px;height: 40px;
+        background: #000;position: relative;
+    }
+    .toggle div{
+        position: absolute;
+        width: 25px;height: 3px;
+        background: #fff;
+        top: 50%;left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 5px;
+    }
+    .toggle .bar1{top: 10px;}
+    .toggle .bar3{top: 30px;}
+
+    .sldierWrap .li_1st,.sldierWrap .li_2st{
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sldierWrap .li_1st{background-image: url(../images/main_banner01.jpg);}
+    .sldierWrap .li_2st{background-image: url(../images/main_banner02.jpg);}
+
+    
+    
+}
