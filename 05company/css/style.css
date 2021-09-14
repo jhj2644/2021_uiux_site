@@ -33,11 +33,27 @@ html,body{height: 100%;}
 }
 
 
+.content>ul>li{float: left;width: 25%;height: 310px;background: orange;}
+
+.content>ul>li:nth-child(2n){background: skyblue;}
+.content>ul>li:nth-child(1){}
+.content>ul>li:nth-child(2){}
+.content>ul>li:nth-child(3){width: 50%;}
+.content>ul>li:nth-child(4){}
+.content>ul>li:nth-child(5){}
+.content>ul>li:nth-child(6){width: 50%;}
+.content>ul>li:nth-child(7){height: 620px;}
+.content>ul>li:nth-child(8){width: 50%;}
+.content>ul>li:nth-child(9){}
+.content>ul>li:nth-child(10){}
+.content>ul>li:nth-child(11){width: 50%;}
 
 
 /* pc버전 */
 @media screen and ( min-width:700px ){
-    #main_header{height: 1950px;background: #ddd;}
+
+    /* header  */
+    #main_header{height: 1930px;background: #ddd;position: relative;}
 
     #header_top{
         width: 1240px;background: pink;z-index: 1;
@@ -50,6 +66,10 @@ html,body{height: 100%;}
     #header_top .gnb li>a{display: block;line-height: 50px;text-align: center;padding: 0 30px;}
     .toggle{display: none;}
 
+
+    /* slider  */
+
+    .sliderWrap{position: relative;}
     .sliderWrap .li_1st,.sliderWrap .li_2st{
         height: 1000px;
         background-repeat: no-repeat;
@@ -60,18 +80,26 @@ html,body{height: 100%;}
     .sliderWrap .li_1st{background-image: url(../images/mainimg01.jpg);}
     .sliderWrap .li_2st{background-image: url(../images/mainimg02.jpg);}
 
-    
     .sliderWrap .nextBtn, 
     .sliderWrap .prevBtn{position: absolute;top: 50%;transform: translateY(-50%);cursor: pointer;}
 
     .sliderWrap .nextBtn{right: 30px;}
     .sliderWrap .prevBtn{left: 30px;}
 
-
-
     .bx-wrapper .bx-pager{
-        bottom: 400px;
+        bottom: 350px;
     }
+
+
+
+    /* content  */
+    .content{
+        width: 1240px;
+        position: absolute;left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+
     
 }
 
@@ -153,6 +181,23 @@ html,body{height: 100%;}
         bottom: 30px;
     }
 
+
+    /* content  */
+    .content{width: 100%;}
+    .content>ul>li{width: 50%;}
+
+    .content>ul>li:nth-child(1){}
+    .content>ul>li:nth-child(2){}
+    .content>ul>li:nth-child(3){}
+    .content>ul>li:nth-child(4){}
+
+    .content>ul>li:nth-child(5),
+    .content>ul>li:nth-child(6),
+    .content>ul>li:nth-child(7),
+    .content>ul>li:nth-child(8),
+    .content>ul>li:nth-child(9),
+    .content>ul>li:nth-child(10),
+    .content>ul>li:nth-child(11){display: none;}
     
 
 }
