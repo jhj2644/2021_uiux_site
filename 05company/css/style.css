@@ -33,20 +33,32 @@ html,body{height: 100%;}
 }
 
 
-.content>ul>li{float: left;width: 25%;height: 310px;background: orange;}
+.content>ul>li{
+    /* float: left; */
+    width: 25%;height: 310px;background: orange;
+}
+
+.content>ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .content>ul>li:nth-child(2n){background: skyblue;}
-.content>ul>li:nth-child(1){}
+.content>ul>li:nth-child(1){display: flex;justify-content: center;align-items: center;}
 .content>ul>li:nth-child(2){}
 .content>ul>li:nth-child(3){width: 50%;}
-.content>ul>li:nth-child(4){}
-.content>ul>li:nth-child(5){}
+.content>ul>li:nth-child(4){display: flex;justify-content: center;align-items: center;}
+.content>ul>li:nth-child(5){display: flex;justify-content: center;align-items: center;}
 .content>ul>li:nth-child(6){width: 50%;}
 .content>ul>li:nth-child(7){height: 620px;}
 .content>ul>li:nth-child(8){width: 50%;}
 .content>ul>li:nth-child(9){}
-.content>ul>li:nth-child(10){}
-.content>ul>li:nth-child(11){width: 50%;}
+.content>ul>li:nth-child(10){position: absolute;bottom: 0;right: 620px;}
+.content>ul>li:nth-child(11){width: 50%;position: absolute;right: 0;bottom: 0;}
+
+.content .icon{text-align: center;width: 150px;height: 150px;margin: 0 auto;}
+.content .icon img{margin: 0 auto;margin-bottom: 10px;}
 
 
 /* pc버전 */
@@ -99,6 +111,7 @@ html,body{height: 100%;}
         transform: translateX(-50%);
         bottom: 0;
     }
+    
 
     
 }
@@ -184,12 +197,14 @@ html,body{height: 100%;}
 
     /* content  */
     .content{width: 100%;}
-    .content>ul>li{width: 50%;}
+    .content>ul>li{width: 50%;order: 11;}
 
-    .content>ul>li:nth-child(1){}
-    .content>ul>li:nth-child(2){}
-    .content>ul>li:nth-child(3){}
-    .content>ul>li:nth-child(4){}
+    .content>ul>li:nth-child(1){order: -1;}
+    .content>ul>li:nth-child(2){order: 2;}
+    .content>ul>li:nth-child(3){order: 3;}
+    .content>ul>li:nth-child(4){order: 1;}
+    .content>ul>li:nth-child(10){position: static;}
+    .content>ul>li:nth-child(11){position: static;}
 
     .content>ul>li:nth-child(5),
     .content>ul>li:nth-child(6),
