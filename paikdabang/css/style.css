@@ -57,9 +57,12 @@ html,body{
     /* font-family: 'Montserrat'; */
 }
 .content>ul>li h3{
-    font-weight: 800;
     font-size: 30px;
     line-height: 37px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.005em;
 }
 .content>ul>li h4{
     font-size: 15px;
@@ -84,7 +87,7 @@ html,body{
     display: flex;justify-content: center;align-items: center;
     }
 .content>ul>li:nth-child(1) .coffeewrap{}
-.content>ul>li:nth-child(1) .coffee{text-align: center;background: red;}
+.content>ul>li:nth-child(1) .coffee{text-align: center;}
 .content>ul>li:nth-child(1) .coffee h2{color: #6D4D30;}
 
 /* content .2 new */
@@ -138,7 +141,7 @@ html,body{
 .content>ul>li:nth-child(6) .story{padding: 35px;position: relative;}
 .content>ul>li:nth-child(6) h5{color: #564E00;}
 .content>ul>li:nth-child(6) h3{margin-top: 15px;margin-bottom: 35px;}
-.content>ul>li:nth-child(6) .circle{position: absolute;margin-top: 20px;left: 55px;}
+.content>ul>li:nth-child(6) .circle{position: absolute;margin-top: 25px;left: 30px;}
 
 
 /* content .7  tasty*/
@@ -157,7 +160,7 @@ html,body{
 }
 .content>ul>li:nth-child(8) .dessert{padding: 35px;}
 .content>ul>li:nth-child(8) .dessert .line3{
-    width: 135px;height: 2px;background: #fff;
+    width: 146px;height: 2px;background: #fff;
     margin-top: 15px;margin-bottom: 15px;
 }
 .content>ul>li:nth-child(8) .dessert h3{color: #fff;}
