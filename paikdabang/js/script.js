@@ -2,7 +2,7 @@ $(document).ready(function(){
     const slider1 = $('.slider').bxSlider({
         controls:false,
         auto:true,
-        preventDefaultSwipeY:true
+        touchEnabled:false
     });
     $(".nextBtn").click(function(){
         slider1.goToNextSlide();
