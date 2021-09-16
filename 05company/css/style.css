@@ -61,6 +61,33 @@ html,body{height: 100%;}
 .content .icon img{margin: 0 auto;margin-bottom: 10px;}
 
 
+.slider2Wrap{position: relative;overflow: hidden;}
+.slider2Wrap .s2list{height: 310px;}
+.slider2Wrap .s2list div{float: left;height: 100%;}
+.slider2Wrap .s2list div.left{
+    width: 50%;background: #fff;
+    padding: 50px;padding-top: 80px;
+    position: relative;
+
+}
+.slider2Wrap .s2list div.left:after{
+    content: "";display: block;
+    border-width: 30px;
+    border-color:transparent transparent transparent #000;
+    border-style: solid;
+    width: 60px;
+    box-sizing: border-box;
+    position: absolute;right: -60px;top: calc(50% - 30px);
+}
+
+.slider2Wrap .s2list div.right{width: 50%;}
+.slider2Wrap h2{position: absolute;top: 40px;left: 50px;}
+.slider2Wrap .btn{
+    position: absolute;right: 40px;bottom: 40px;
+    display: flex;
+}
+
+
 /* pc버전 */
 @media screen and ( min-width:700px ){
 
