@@ -54,7 +54,7 @@ html,body{
     line-height: 61px;
 }
 .content>ul>li h2{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 43px;
     font-style: normal;
@@ -64,7 +64,7 @@ html,body{
     /* font-family: 'Montserrat'; */
 }
 .content>ul>li h3{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     line-height: 37px;
     font-style: normal;
@@ -103,11 +103,14 @@ html,body{
     width: 75%;
     background-image: url(../images/content_01.png);
     cursor: pointer;
+    padding: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-.content>ul>li:nth-child(2) .new{padding: 35px;}
 .content>ul>li:nth-child(2) .new .line1{
-    width: 89px;height: 2px;background: #6D4D30;
-    margin-top: 15px;margin-bottom: 15px;
+    width: 75px;height: 2px;background: #6D4D30;
+    margin-top: 10px;margin-bottom: 15px;
 }
 .content>ul>li:nth-child(2) .new h3{color: #6D4D30;}
 .content>ul>li:nth-child(2) .new p{color: #222222;}
@@ -118,11 +121,12 @@ html,body{
     width: 50%;
     background-image: url(../images/content_02.png);
     cursor: pointer;
+    padding: 35px;
 }
-.content>ul>li:nth-child(3) .ice{padding: 35px;}
+.content>ul>li:nth-child(3) .ice{}
 .content>ul>li:nth-child(3) .ice .line2{
-    width: 53px;height: 2px;background: #071F60;
-    margin-top: 15px;margin-bottom: 15px;
+    width: 45px;height: 2px;background: #071F60;
+    margin-top: 10px;margin-bottom: 15px;
 }
 .content>ul>li:nth-child(3) .ice h3{color: #071F60;}
 
@@ -148,11 +152,13 @@ html,body{
     height: 620px;
     background-image: url(../images/content_03.png);
     cursor: pointer;
+    padding: 35px;
 }
-.content>ul>li:nth-child(6) .story{padding: 35px;position: relative;}
+.content>ul>li:nth-child(6) .story{position: relative;}
 .content>ul>li:nth-child(6) h5{color: #564E00;}
 .content>ul>li:nth-child(6) h3{margin-top: 15px;margin-bottom: 35px;}
-.content>ul>li:nth-child(6) .circle{position: absolute;margin-top: 25px;left: 30px;}
+.content>ul>li:nth-child(6) h4{margin-bottom: 25px;}
+.content>ul>li:nth-child(6) .circle{position: absolute;left: 0;}
 
 
 /* content .7  tasty*/
@@ -168,11 +174,12 @@ html,body{
 .content>ul>li:nth-child(8){
     width: 50%;
     background-image: url(../images/content_04.png);
+    padding: 35px;
 }
-.content>ul>li:nth-child(8) .dessert{padding: 35px;}
+.content>ul>li:nth-child(8) .dessert{}
 .content>ul>li:nth-child(8) .dessert .line3{
-    width: 146px;height: 2px;background: #fff;
-    margin-top: 15px;margin-bottom: 15px;
+    width: 125px;height: 2px;background: #fff;
+    margin-top: 10px;margin-bottom: 15px;
 }
 .content>ul>li:nth-child(8) .dessert h3{color: #fff;}
 .content>ul>li:nth-child(8) .dessert p{color: #fff;}
@@ -180,8 +187,12 @@ html,body{
 
 
 /* content .9 store  */
-.content>ul>li:nth-child(9){background: #D2EAFF;position: absolute;bottom: 0;left: 310px;}
-.content>ul>li:nth-child(9) .store{padding: 35px;position: relative;}
+.content>ul>li:nth-child(9){
+    background: #D2EAFF;position: absolute;
+    bottom: 0;left: 310px;
+    padding: 35px;
+}
+.content>ul>li:nth-child(9) .store{position: relative;}
 .content>ul>li:nth-child(9) .store h3{margin-bottom: 10px;color: #071F60;}
 .content>ul>li:nth-child(9) .store .search{position: relative;margin-top: 108px;}
 .content>ul>li:nth-child(9) .searchInp{
@@ -201,15 +212,18 @@ html,body{
     background: url(../images/search-icon.png) no-repeat center;
     cursor: pointer;
 }
-.content>ul>li:nth-child(9) .store img{position: absolute;bottom: 69.5px;right: 50px;}
+.content>ul>li:nth-child(9) .store img{position: absolute;bottom: 34px;right: 20px;}
 
 
 
 
 /* content .10 franchise  */
-.content>ul>li:nth-child(10){width: 50%;background: #fff;position: absolute;right: 0;bottom: 0;}
-.content>ul>li:nth-child(10) li{}
-.content>ul>li:nth-child(10) .franchise{padding: 35px;}
+.content>ul>li:nth-child(10){
+    width: 50%;background: #fff;
+    position: absolute;
+    right: 0;bottom: 0;
+    padding: 35px;
+}
 .content>ul>li:nth-child(10) .franchise h3{margin-bottom: 10px;color: #071F60;}
 .content>ul>li:nth-child(10) .franchise .franicon{position: absolute;bottom: 40px;}
 .content>ul>li:nth-child(10) .franchise .franlogo{position: absolute;bottom: 0;right: 0;}
@@ -441,7 +455,61 @@ html,body{
     .content>ul>li:nth-child(8){
         width: 100%;background-size: cover;background-position: center;height: 190px;}
 
+
+    /* content .2 new */
+    .content>ul>li:nth-child(2){padding: 20px;}
+    .content>ul>li:nth-child(2) .new .line1{
+        width: 60px;height: 2px;background: #6D4D30;
+        margin-top: 0;margin-bottom: 5px;
+    }
+    .content>ul>li:nth-child(2) .new p{color: #222222;text-shadow: 0 0 5px #fff;}
+
+
+    /* content .3 ice */
+    .content>ul>li:nth-child(3){padding: 20px;}
+    .content>ul>li:nth-child(3) .ice .line2{
+        width: 35px;height: 2px;background: #071F60;
+        margin-top: 0;margin-bottom: 5px;
+    }
+
+    /* content .8 dessert */
+    .content>ul>li:nth-child(8){padding: 20px;}
+    .content>ul>li:nth-child(8) .dessert .line3{
+        width: 100px;height: 2px;background: #fff;
+        margin-top: 0;margin-bottom: 5px;
+    }
+
+
+    .content>ul>li h1{
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 61px;
+    }
+    .content>ul>li h2{
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 43px;
+        font-style: normal;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
     
+        /* font-family: 'Montserrat'; */
+    }
+    .content>ul>li h3{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 37px;
+        font-style: normal;
+        letter-spacing: 0.005em;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .content>ul>li p{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 24px;
+    }
 
     /* vision  */
     .vision{display: none;}
