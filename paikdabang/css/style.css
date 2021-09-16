@@ -238,6 +238,7 @@ html,body{
     height: 724px;width: 100%;
     /* position: absolute;top: 2000px; */
     padding-top: 60px;
+    margin-bottom: 80px;
 }
 .vision .visionwrap{
     width: 1240px;margin: 0 auto;
@@ -331,6 +332,33 @@ html,body{
         width: 1240px;
         margin: 0 auto;
         margin-bottom: 80px;        
+    }
+
+
+    /* event  */
+    .event{position: relative;width: 1240px;
+        margin: 0 auto;}
+    .event>ul{display: flex;flex-wrap: wrap;}
+    .event>ul>li{width: 25%;height: 310px;}
+    .event>ul>li:nth-child(2n+1){background: skyblue;}
+    .event>ul>li:nth-child(1){
+        height: 620px;
+        padding: 110px 40px;
+    }
+    .event>ul>li:nth-child(2){}
+    .event>ul>li:nth-child(3){}
+    .event>ul>li:nth-child(4){}
+    .event>ul>li:nth-child(5){
+        position: absolute;
+        bottom: 0;left: 310px;
+    }
+    .event>ul>li:nth-child(6){
+        position: absolute;
+        bottom: 0;left: 620px;
+    }
+    .event>ul>li:nth-child(7){
+        position: absolute;
+        right: 0;bottom: 0;
     }
     
 
