@@ -12,7 +12,7 @@ $(document).ready(function(){
     });
 
     $(".toggle").click(function(){
-        const toggle =$(".toggle").attr("class");
+        const toggle = $(".toggle").attr("class");
         console.log(toggle);
         if( toggle =="toggle"){
             document.getElementsByClassName("toggle")[0].classList.add("active");
