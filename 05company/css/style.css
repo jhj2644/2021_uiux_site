@@ -88,12 +88,39 @@ html,body{height: 100%;}
     display: flex;
 }
 
+.container{
+    background: url(../images/contentsbg01.jpg) no-repeat center fixed;
+    background-size: cover;padding: 60px 0;
+}
+.container .section{
+    width: 1240px;margin: 0 auto;color: #fff;
+
+}
+.container .section h4{text-align: center;}
+.container .section h4::after{
+    content: "";display: block;width: 50px;
+    height: 2px;background: #fff;
+    margin: 20px auto;
+}
+.container .section>p{text-align: center;font-size: 2em;}
+.container .vision li{float: left;width: calc((100% - 60px) / 4);margin-right: 20px;}
+.container .vision li:last-child{margin-right: 0;}
+
+.container .vision li{padding: 30px;background: orange;}
+.container .vision li img{margin: 0 auto;}
+.container .vision li .card_body{padding: 5px;text-align: center;}
+
+
+
 
 /* pc버전 */
 @media screen and ( min-width:700px ){
 
     /* header  */
-    #main_header{height: 1930px;background: #ddd;position: relative;}
+    #main_header{
+        height: 1930px;_background: #ddd;
+        position: relative;margin-bottom: 60px;
+    }
 
     #header_top{
         width: 1240px;background: pink;z-index: 1;
