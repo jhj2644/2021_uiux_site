@@ -336,30 +336,130 @@ html,body{
 
 
     /* event  */
-    .event{position: relative;width: 1240px;
-        margin: 0 auto;}
-    .event>ul{display: flex;flex-wrap: wrap;}
-    .event>ul>li{width: 25%;height: 310px;}
-    .event>ul>li:nth-child(2n+1){background: skyblue;}
-    .event>ul>li:nth-child(1){
+    .event{
+        position: relative;width: 1240px;
+        margin: 0 auto;display: flex;
+        border: 1px solid #2E4D8E;
+        box-sizing: content-box;
+        margin-bottom: 80px;
+    }
+    
+
+
+    /* event left  */
+    .event .eventwrap{
         height: 620px;
+        width: 310px;
         padding: 110px 40px;
+        background: #2E4D8E;
+        position: relative;
     }
-    .event>ul>li:nth-child(2){}
-    .event>ul>li:nth-child(3){}
-    .event>ul>li:nth-child(4){}
-    .event>ul>li:nth-child(5){
-        position: absolute;
-        bottom: 0;left: 310px;
+    .event .eventwrap img{margin: 0 auto;margin-bottom: 20px;}
+    .event .eventwrap h2{
+        color: #fff;text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 60px;
     }
-    .event>ul>li:nth-child(6){
-        position: absolute;
-        bottom: 0;left: 620px;
+    .event .eventwrap p:first-of-type{
+        font-family:'Montserrat' ;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        margin-bottom: 20px;
     }
-    .event>ul>li:nth-child(7){
-        position: absolute;
-        right: 0;bottom: 0;
+    .event .eventwrap p:last-of-type{
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.095em;
+        color: #fff;
     }
+    
+    .event .eventwrap .btn{
+        position: absolute;display: flex;
+        right: 40px;bottom: 40px;
+        cursor: pointer;
+    }
+
+
+
+    /* eventsliderwrap */
+    .swiper{width: 930px;height: 620px;overflow: hidden;} 
+    .swiper-wrapper{display: flex;}
+    .swiper-slide{background: #fff;}
+    .swiper-slide .bottom,.top2{
+        width: 310px;height: 310px;
+        display: flex;justify-content: center;align-items: center;flex-direction: column;
+        text-align: center;
+    }
+    .swiper-slide .bottom p:first-of-type{margin-bottom: 20px;font-weight: bold;}
+    .swiper-slide .top2 p:first-of-type{margin-bottom: 20px;font-weight: bold;}
+    .swiper-slide .top2 p:last-of-type{font-size: 15px;}
+    .swiper-slide .bottom p:last-of-type{font-size: 15px;}
+    .swiper-slide .bottom2,.swiper-slide .top{width: 310px;height: 310px;}
+
+
+    .swiper-slide .top2,.swiper-slide .bottom{position: relative;}
+    .swiper-slide .top2::after{
+        content: "";display: block;
+        border-width: 30px;
+        border-color: #fff transparent transparent transparent ;
+        border-style: solid;
+        width: 60px;
+        box-sizing: border-box;
+        position: absolute;bottom: -60px;
+    }
+    .swiper-slide .bottom::after{
+        content: "";display: block;
+        border-width: 30px;
+        border-color: transparent transparent #fff transparent ;
+        border-style: solid;
+        width: 60px;
+        box-sizing: border-box;
+        position: absolute;top: -60px;
+    }
+
+
+
+    /* management  */
+    .management{width: 1240px;margin: 0 auto;display: flex;}
+    .management .manage,.management .employ{width: 620px;height: 310px;color: #fff;}
+    .management .manage{background: #FFE600;padding: 40px;position: relative;}
+    .management .employ{background: #FFC123;padding: 40px;position: relative;}
+    .management .manage img,
+    .management .employ img{position: absolute;right: 40px;top: 50%;transform: translateY(-50%);}
+    .management .manage h3,.management .employ h3{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .management .manage h3::after,
+    .management .employ h3::after{
+        content: "";display: block;
+        width: 60px;height: 4px;background: #fff;
+        margin: 20px 0;
+    }
+
+    .management .manage p:first-of-type,.management .employ p:first-of-type{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+
+
+
+    
     
 
     
@@ -416,7 +516,7 @@ html,body{
     .toggle{display: block;}
     .toggle{
         width: 40px;height: 40px;
-        _background: #000;position: relative;
+        position: relative;
         z-index: 2;
     }
     .toggle div{
@@ -541,5 +641,9 @@ html,body{
 
     /* vision  */
     .vision{display: none;}
+
+
+    /* event  */
+    .event{display: none;}
     
 }

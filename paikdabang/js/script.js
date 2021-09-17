@@ -8,8 +8,10 @@ $(document).ready(function(){
         slider1.goToNextSlide();
     });
     $(".prevBtn").click(function(){
-        slider1.goTopPrevSlide();
+        slider1.goToPrevSlide();
     });
+
+
 
     $(".toggle").click(function(){
         const toggle = $(".toggle").attr("class");
@@ -27,4 +29,29 @@ $(document).ready(function(){
         $(".toggle").removeClass("active");
         $(".gnb").removeClass("view");
     });
+
+
+
+
+
+    var swiper = new Swiper(".mySwiper",{
+        slidesPerView:3,
+        spaceBetween:0,
+        controls:true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        navigation: {
+            nextEl: ".nextBtn2",
+            prevEl: ".prevBtn2",
+          },
+
+    });
+
+    
+    
+
+
 });

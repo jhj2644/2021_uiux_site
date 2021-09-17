@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
 </head>
 <body>
     <!-- header  -->
@@ -210,48 +212,116 @@
 
     <!-- event -->
     <div class="event">
-        <ul class="clearfix">
-            <li>
-                <div class="eventwrap">
-                    <img src="images/event logo.png" alt="">
-                    <h2>EVENT</h2>
-                    <p>다양한 이벤트와 새로운 소식을 확인하세요!</p>
-                    <p>빽다방의 이벤트와 새로운 소식이 여러분을 기다립니다.</p>
-                    <div class="btn">
-                        <img src="images/event_prevbtn.png" alt="">
-                        <img src="images/event_nextbtn.png" alt="">
+        <div class="eventwrap">
+            <img src="images/event logo.png" alt="">
+            <h2>EVENT</h2>
+            <p>다양한 이벤트와 새로운 소식을 확인하세요!</p>
+            <p>빽다방의 이벤트와 새로운 소식이 여러분을 기다립니다.</p>
+            <div class="btn">
+                <img src="images/event_prevbtn.png" alt="" class="prevBtn2">
+                <img src="images/event_nextbtn.png" alt="" class="nextBtn2">
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide1">
+                        <div class="top">
+                        <img src="images/event_slide01.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <p>빽다방 티머니페이 3,000원 <br> 캐시백 이벤트!</p>
+                            <p>조회수 2399</p>
+                        </div>
                     </div>
                 </div>
-            </li>
 
-            <li>
-                <img src="images/event_slide01.png" alt="">
-            </li>
+                <div class="swiper-slide">
+                    <div class="slide2">
+                        <div class="top2">
+                            <p>맛좋고 신선한 국내산 수박을 <br>통째로 담았다</p>
+                            <p>조회수 4319</p>
+                        </div>
+                        <div class="bottom2">
+                            <img src="images/event_slide02.png" alt="">
+                        </div>
+                    </div>
+                </div>
 
-            <li>
-                <p>맛좋고 신선한 국내산 수박을 통째로 담았다</p>
-                <p>조회수 4319</p>
-            </li>
+                <div class="swiper-slide">
+                    <div class="slide3">
+                        <div class="top">
+                            <img src="images/event_slide03.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <p><빽다방x성주군> <br>우리가치 프로젝트</p>
+                            <p>조회수 3615</p>
+                        </div>
+                    </div>
+                </div>
 
-            <li>
-                <img src="images/event_slide03.png" alt="">
-            </li>
+                <div class="swiper-slide">
+                    <div class="slide4">
+                        <div class="top2">
+                            <p>더 강력해진 <br>룰렛이벤트</p>
+                            <p>조회수 5214</p>
+                        </div>
+                        <div class="bottom2">
+                            <img src="images/event_slide04.png" alt="">
+                        </div>
+                    </div>
+                </div>
 
-            <li>
-                <p>빽다방 티머니페이 3,000원 캐시백 이벤트!</p>
-                <p>조회수 2399</p>
-            </li>
+                <div class="swiper-slide">
+                    <div class="slide5">
+                        <div class="top">
+                            <img src="images/event_slide05.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <p>나를 위해 마시는 케어 <br>#콤부차#발효음료#이너뷰티#스파클링</p>
+                            <p>조회수 5512</p>
+                        </div>
+                    </div>
+                </div>
 
-            <li>
-                <img src="images/event_slide02.png" alt="">
-            </li>
-
-            <li>
-                <p><빽다방x성주군> 우리가치 프로젝트</p>
-                <p>조회수 3615</p>
-            </li>
-        </ul>
+                <div class="swiper-slide">
+                    <div class="slide6">
+                        <div class="top2">
+                            <p>사다리타기 이벤트</p>
+                            <p>조회수 6521</p>
+                        </div>
+                        <div class="bottom2">
+                            <img src="images/event_slide06.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <div class="management">
+        <div class="manage"> 
+            <div class="managewrap">
+                <h3>지속가능경영</h3>
+                <p>사람과 생활에 행복을 주는 기업으로 <br>함께 하겠습니다.</p>
+                <p>자세히 보기</p>
+                <img src="images/manage_icon.png" alt="">
+            </div>
+        </div>
+
+        <div class="employ">
+            <div class="employwrap">
+                <h3>인재채용</h3>
+                <p>창의력을 발휘하여 발전하는 <br>인재를 기다립니다.</p>
+                <p>자세히 보기</p>
+                <img src="images/employ_icon.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
 
 
 
