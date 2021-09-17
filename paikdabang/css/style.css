@@ -161,13 +161,13 @@ html,body{
 .content>ul>li:nth-child(6) .circle{position: absolute;left: 0;}
 
 
-/* content .7  tasty*/
+/* content .7  cream*/
 .content>ul>li:nth-child(7){
     background: #FFAC4A;
     display: flex;justify-content: center;align-items: center;
 }
-.content>ul>li:nth-child(7) .tasty{position: relative;text-align: center;}
-.content>ul>li:nth-child(7) .tasty h2{color: #fff;}
+.content>ul>li:nth-child(7) .cream{position: relative;text-align: center;}
+.content>ul>li:nth-child(7) .cream h2{color: #fff;}
 
 
 /* content .8 dessert */
