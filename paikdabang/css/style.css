@@ -772,12 +772,11 @@ html,body{
     }
     .footerwrap .footerForm{
         position: absolute;
+        transform: translateX(-50%);left: 50%;
         
     }
-    /* .footerwrap .footerRight{
-        display: flex;justify-content: center;
-        align-items: center;
-    } */
+
+    .footerwrap .footerRight ul{display: inline-block;}
     .footerwrap .footerRight ul li{
         padding-right:10px;
         float: left;
@@ -786,7 +785,7 @@ html,body{
         padding-right: 0;
     }
     .footerwrap .footerRight ul li a{
-        margin: 0 auto;text-align: center;
+        text-align: center;
     }
     
     
