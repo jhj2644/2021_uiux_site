@@ -494,6 +494,10 @@ html,body{
 
 
     /* footer  */
+    .footerwrap{
+        margin: 0 auto;width: 1240px;
+        position: relative;height: 200px;
+    }
     .footerwrap .footerRight ul li{float: left;margin-bottom: 5px;}
     .footerwrap .footerRight ul:last-of-type{margin-bottom: 15px;}
     .footerwrap .footerRight ul li a{
@@ -504,18 +508,18 @@ html,body{
         font-style: normal;
         font-weight: 500;
         line-height: 16px;
+        padding: 0 30px;
     }
     
     .footerwrap .footerRight ul li a:after{
         content: "";display: block;
         background: #262626;
         position: absolute;
-        width: 1px;height: 10px;top: 5px;
+        width: 1px;height: 10px;top: 3px;
         right: 0;
         }
 
-
-    .footerwrap .footerRight ul li:first-child{
+    .footerwrap .footerRight ul li:first-child a{
         padding-left: 0;
     }
     .footerwrap .footerRight ul li:last-child a::after{
@@ -544,15 +548,8 @@ html,body{
         background: #FFE600;
         margin-bottom: 45px;
     }
-    .footerwrap .footerRight ul li{padding: 0 30px;}
-    
-    .footerwrap{margin: 0 auto;width: 1240px;position: relative;height: 200px;}
     .footerwrap img{float: left;}
-    
-
     .footerForm{position: absolute;right: 0;}
-    
-
     .topUp img{position: absolute;right: 0;top: 50px;}
 
 
