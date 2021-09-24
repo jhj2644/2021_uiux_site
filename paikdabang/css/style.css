@@ -505,15 +505,20 @@ html,body{
         font-weight: 500;
         line-height: 16px;
     }
+    
     .footerwrap .footerRight ul li a:after{
         content: "";display: block;
         background: #262626;
         position: absolute;
-    }
-    .footerwrap .footerRight ul li:first-child a{
+        width: 1px;height: 10px;top: 5px;
+        right: 0;
+        }
+
+
+    .footerwrap .footerRight ul li:first-child{
         padding-left: 0;
     }
-    .footerwrap .footerRight ul li:first-child a::after{
+    .footerwrap .footerRight ul li:last-child a::after{
         content: "";display: none;
     }
 
@@ -531,12 +536,7 @@ html,body{
         font-size: 12px;color: #262626;
         padding: 8px 7px;
     }
-
-
-
-
-
-
+    
     .footerwrap .footerRight{float: right;position: absolute;left: 300px;}
     #footer::before{
         content: "";display: block;
@@ -545,12 +545,7 @@ html,body{
         margin-bottom: 45px;
     }
     .footerwrap .footerRight ul li{padding: 0 30px;}
-    .footerwrap .footerRight ul li a:after{
-        width: 1px;height: 10px;
-        background: #262626;
-        position: absolute;top: 5px;
-        
-    }
+    
     .footerwrap{margin: 0 auto;width: 1240px;position: relative;height: 200px;}
     .footerwrap img{float: left;}
     
@@ -758,7 +753,7 @@ html,body{
     /* footer  */
     .footerwrap{
         width: 100%;position: relative;
-        height: 360px;padding: 20px;
+        height: 300px;padding: 30px;
         margin: 0 auto;
     }
     #footer::before{
@@ -768,7 +763,7 @@ html,body{
     }
     .footerwrap>img{
         margin: 0 auto;
-        padding: 20px 0 30px 0;
+        margin-bottom: 30px;
     }
     .footerwrap .topUp{
         position: absolute;
@@ -779,24 +774,30 @@ html,body{
         position: absolute;
         
     }
-    .footerwrap .footerRight{
+    /* .footerwrap .footerRight{
         display: flex;justify-content: center;
-        align-items: center;flex-direction: column;
+        align-items: center;
+    } */
+    .footerwrap .footerRight ul li{
+        padding-right:10px;
+        float: left;
     }
-    .footerwrap .footerRight ul li{padding: 0 10px;}
+    .footerwrap .footerRight ul li:last-child{
+        padding-right: 0;
+    }
     .footerwrap .footerRight ul li a{
         margin: 0 auto;text-align: center;
     }
-    .footerwrap .footerRight ul li a:after{
-        width: 1px;height: 10px;
-        background: #262626;
-        position: absolute;top: 2px;
-    }
     
-    .footerwrap .footerRight{margin: 0 auto;}
+    
+    .footerwrap .footerRight{margin: 0 auto;text-align: center;}
     .footerwrap .footerRight ul:last-of-type{margin-bottom: 20px;}
     .footerwrap .footerRight ul li a{
         font-size: 10px;
     }
+    .footerwrap .footerRight p{
+        font-size: 10px;margin-bottom: 20px;
+    }
+
     
 }
