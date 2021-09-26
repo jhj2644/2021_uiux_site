@@ -291,7 +291,7 @@ html,body{
 
 
 /* subpage  */
-.maincontent{height: 1000px;width: 100%;background: #f0f0f0;}
+.maincontent{_height: 2000px;width: 100%;_background: #f0f0f0;}
 .subcontent .subimg{
     height: 500px;
     display: flex;justify-content: center;align-items: center;
@@ -300,6 +300,7 @@ html,body{
     background-size: cover;
     text-align: center;
     position: relative;
+    
 }
 .subcontent .subimg::after{
     content: "";display: block;
@@ -351,8 +352,120 @@ html,body{
     font-size: 20px;
     line-height: 24px;
 }
-    
-    
+
+.maincontent .maincontentWrap{
+    width: 1240px;margin: 0 auto;
+}
+.maincontent .introduce{
+    display: flex;justify-content: center;align-items: center;
+    margin-bottom: 110px;
+}
+.maincontent .paiks{text-align: center;}
+.maincontent .paiks p:first-of-type{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #0E347E;
+    margin-bottom: 100px;
+}
+.maincontent .paiks p:first-of-type::before{
+    content: "";display: block;
+    background: #0E347E;
+    width: 50px;height: 3px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.maincontent .paiks h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 45px;
+    margin-bottom: 50px;
+}
+.maincontent .paiks img{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.maincontent .paiks p:last-of-type{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 40px;
+}
+
+
+.maincontent .introline{
+    width: 1260px;height: 3px;
+    background: #0E347E;
+    margin-bottom: 50px;
+}
+
+.maincontent .subEmployment .subEmploymentWrap{
+    display: flex;justify-content: space-around;
+    margin-bottom: 120px;
+}
+
+.maincontent .subEmployment .subEmploymentWrap img{
+    margin-bottom: 50px;
+}
+
+.maincontent .subEmployment .subEmploymentWrap p:first-of-type{
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #071F60;
+}
+
+.maincontent .subEmployment .subEmploymentWrap p:last-of-type{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #202020;
+}
+
+
+
+.maincontent .coffeebeans .coffeebeansWrap{
+    display: flex;justify-content: center;
+    margin-bottom: 200px;
+}
+.maincontent .coffeebeans .coffeebeansWrap .coffeeTxtWrap{
+    width: 380px;height: 242px;
+    display: flex;justify-content: center;_align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.maincontent .coffeebeans .coffeebeansWrap p:first-of-type{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #071F60;
+    margin-bottom: 15px;
+}
+.maincontent .coffeebeans .coffeebeansWrap p:last-of-type{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
 
 
 
@@ -624,7 +737,8 @@ html,body{
     .subcontent.company .subimg{
         background-image: url(../images/subpage_company\ bg.png);
     }
-
+    .maincontent .paiks{padding-top: 110px;}
+    
     
     
 
