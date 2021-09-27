@@ -291,7 +291,7 @@ html,body{
 
 
 /* subpage  */
-.maincontent{_height: 2000px;width: 100%;_background: #f0f0f0;}
+.maincontent{_height: 2000px;width: 100%;_background: #fff;}
 .subcontent .subimg{
     height: 500px;
     display: flex;justify-content: center;align-items: center;
