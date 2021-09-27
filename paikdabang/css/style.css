@@ -291,7 +291,10 @@ html,body{
 
 
 /* subpage  */
-.maincontent{_height: 2000px;width: 100%;_background: #fff;}
+.subcontent.company .subimg{
+    background-image: url(../images/subpage_company\ bg.png);
+}
+.maincontent{width: 100%;background: #fff;}
 .subcontent .subimg{
     height: 500px;
     display: flex;justify-content: center;align-items: center;
@@ -337,10 +340,12 @@ html,body{
 .subcontent .submenu{
     position: absolute;
     bottom: 0;background: #fff;
+    width: 900px;
 }
 .subcontent .submenu ul li{
-    float: left;padding: 20px 70px;
+    float: left;_padding: 20px 70px;
     border: 1px solid #EDEDED;
+    width: calc(100% / 3);
 }
 .subcontent .submenu ul li:hover{
     background: #FFE600;transition: .3s;
@@ -350,7 +355,7 @@ html,body{
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 65px;height: 65px;
 }
 
 .maincontent .maincontentWrap{
@@ -440,7 +445,7 @@ html,body{
 
 .maincontent .coffeebeans .coffeebeansWrap{
     display: flex;justify-content: center;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
 }
 .maincontent .coffeebeans .coffeebeansWrap .coffeeTxtWrap{
     width: 380px;height: 242px;
@@ -480,6 +485,27 @@ html,body{
 
 /* pc버전 */
 @media screen and ( min-width:700px ){
+    /* submenu  */
+    .gnb .submenu{display: none;}
+    /* .gnb>ul>li:hover .submenu{display: block;_top: 70px;} */
+    /* .submenu a{font-size: 12px;}
+    .gnb:hover .submenubar{display: block;}
+    .submenu{
+        display: none;position: absolute;
+        _top: -200%;_width: 100%;background: #fff;
+        transition: 0.3s;z-index: 1;
+    }
+    .gnb.submenu li{float: left;padding: 5px 10px;}
+    .gnb>ul>li:nth-child(2) .submenu{left: calc(50% - 400px);}
+    .gnb>ul>li:nth-child(3) .submenu{left:50%;transform: translateX(-50%);}
+    .gnb>ul>li:nth-child(4) .submenu{left: calc(50% + 30px);}
+    .gnb>ul>li:nth-child(5) .submenu{right: 0;} */ */
+    /* .submenubar{
+        width: 100%;height: 100px;
+        background: #FFE600;bottom: -100px;
+        position: absolute;display: none;
+    }
+    
 
     /* header  */
     #main_header{height: 100px;}
@@ -734,10 +760,9 @@ html,body{
 
 
     /* subcontent  */
-    .subcontent.company .subimg{
-        background-image: url(../images/subpage_company\ bg.png);
-    }
+    
     .maincontent .paiks{padding-top: 110px;}
+    .maincontent img{margin: 0 auto;}
     
     
     
@@ -980,5 +1005,22 @@ html,body{
         font-size: 10px;margin-bottom: 20px;
     }
 
+
+
+
+    /* subpage  */
+    
+    .subcontent .submenu{
+        width: 100%;height: initial;
+    }
+    .subcontent .submenu ul li{
+        width: 50%;
+    }
+
+    .subcontent .submenu ul li:last-child{
+        width: 100%;
+    }
+
+    .maincontent img{width: 100%;}
     
 }

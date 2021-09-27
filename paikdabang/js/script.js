@@ -11,6 +11,40 @@ $(document).ready(function(){
         slider1.goToPrevSlide();
     });
 
+    // const tabList = document.querySelectorAll(".tab li");
+
+    //     tabList[0].addEventListener("click",function(){
+    //         for(let i=0;i<tabList.length;i++){
+    //             tabList[i].classList.remove("on");
+    //         };
+    //         tabList[0].classList.add("on");
+    //     });
+    //     tabList[1].addEventListener("click",function(){
+
+    //         for(let i=0;i<tabList.length;i++){
+    //             tabList[i].classList.remove("on");
+    //         }
+
+    //         tabList[1].classList.add("on");
+
+    //     });
+    //     tabList[2].addEventListener("click",function(){
+
+    //         for(let i=0;i<tabList.length;i++){
+    //             tabList[i].classList.remove("on");
+    //         }
+    //         tabList[2].classList.add("on");
+            
+    //     });
+    //     tabList[3].addEventListener("click",function(){
+
+    //         for(let i=0;i<tabList.length;i++){
+    //             tabList[i].classList.remove("on");
+    //         }
+    //         tabList[3].classList.add("on");
+    //     });
+
+
 
 
     $(".toggle").click(function(){
