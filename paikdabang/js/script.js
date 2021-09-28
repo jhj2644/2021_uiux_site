@@ -85,6 +85,25 @@ $(document).ready(function(){
     });
 
     
+    // $("#header_top").hover(function(){
+    //     $(".submenubar").animate({top:100})
+    // },function(){
+    //     $(".submenubar").animate({top:0})
+    // })
+
+    
+    //subpage
+    $("ul>li").click(function(){
+
+        let num = $(this).index();
+
+        $("ul>li").removeClass();
+        $(this).addClass("on");
+
+        $(".maincontent>div").hide();
+        $(".maincontent>div").eq(num).show();
+    })
+    
     
 
 
