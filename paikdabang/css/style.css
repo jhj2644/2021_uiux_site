@@ -297,19 +297,19 @@ html,body{
     background-image: url(../images/subpage_companybg.png);
 }
 .subcontent.menu .subimg{
-    background-image: url(../images/subpage_menu.jpg);
+    background-image: url(../images/subpage_menu.png);
 }
 .subcontent.news .subimg{
-    background-image: url(../images/subpage_news.jpg);
+    background-image: url(../images/subpage_news.png);
 }
 .subcontent.community .subimg{
-    background-image: url(../images/subpage_community.jpg);
+    background-image: url(../images/subpage_community.png);
 }
 .subcontent.storeinfo .subimg{
-    background-image: url(../images/subpage_storeinfo.jpg);
+    background-image: url(../images/subpage_storeinfo.png);
 }
 .subcontent.foundinfo .subimg{
-    background-image: url(../images/subpage_foundinfo.jpg);
+    background-image: url(../images/subpage_foundinfo.png);
 }
 .subcontent.customer .subimg{
     background-image: url(../images/subpage_customer.jpg);
