@@ -1071,5 +1071,12 @@ html,body{
     .subcontent.news .submenu ul li:last-child{width: 100%;}
 
     .maincontent img{width: 100%;}
+
+    .maincontent div{display: none;}
+    .maincontent div:first-child{display: block;}
+
+    .submenu .tab li.on{background: #FFE600;}
+
+
     
 }
