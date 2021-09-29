@@ -383,7 +383,7 @@ html,body{
 .subcontent.news .submenu ul li{
     float: left;_padding: 20px 70px;
     border: 1px solid #EDEDED;
-    width: calc(100% / 3);
+    width: calc(100% / 4);
 }
 .subcontent.community .submenu ul li{
     float: left;_padding: 20px 70px;
