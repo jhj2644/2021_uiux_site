@@ -825,7 +825,7 @@ html,body{
     /* header  */
     #main_header{}
 
-    .logo img{width: 80%;}
+    .logo img{width: 165px;height: 55px;}
 
     #header_top{
         padding: 0 16px;
@@ -850,7 +850,7 @@ html,body{
     }
     #header_top .gnb.view{right: 0;}
     #header_top .gnb a{
-        line-height: 40px;
+        line-height: 40px;height: 40px;
         width: 200px;display: block;
         font-size: 30px;font-weight: bold;
         color: #071F60;font-family: 'Noto Sans KR', sans-serif;
@@ -867,6 +867,7 @@ html,body{
         width: 40px;height: 40px;
         position: relative;
         z-index: 2;
+        cursor: pointer;
     }
     .toggle div{
         position: absolute;
@@ -876,7 +877,6 @@ html,body{
         transform: translate(-50%,-50%);
         border-radius: 20px;
         transition: 0.3s;
-        cursor: pointer;
     }
     .toggle .bar1{top: 10px;}
     .toggle .bar3{top: 30px;}
@@ -1058,12 +1058,17 @@ html,body{
         width: 100%;height: initial;
     }
     .subcontent .submenu ul li{
-        width: 50%;
+        _width: 50%;
     }
 
-    .subcontent .submenu ul li:last-child{
-        width: 100%;
+
+    /* submenu  */
+    .subcontent.menu .submenu ul li{width: calc(100% / 3);}
+    .subcontent.menu .submenu ul li:nth-child(4),.subcontent.menu .submenu ul li:nth-child(5){
+        width: 50%;
     }
+    .subcontent.news .submenu ul li{width: calc(100% / 3);}
+    .subcontent.news .submenu ul li:last-child{width: 100%;}
 
     .maincontent img{width: 100%;}
     
