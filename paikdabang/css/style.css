@@ -30,7 +30,12 @@ html,body{
 .circle{
     width: 44px;height: 44px;border-radius: 50%;
     background: #fff;position: relative;margin: 0 auto;
+    transition: all ease 1s;
 }
+
+.circle:hover{transform: rotate(720deg);}
+
+
 .circle .bar1, .circle .bar2{
     width: 18px;height: 4px;background: #071F60;
     border-radius: 2px;
@@ -40,13 +45,7 @@ html,body{
 }
 .circle .bar1{transform: translate(-50%,-50%) rotate(90deg);}
 
-.coffee:hover .circle{
-    animation-name: ani;
-}
-@keyframes ani{
-    from{transform: translate(-50%,-50%);}
-    to{transform: translate(-50%,-50%) rotate(360deg);}
-}
+
 
 
 
@@ -114,8 +113,13 @@ html,body{
     padding: 35px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    
+    
+    
 }
+
+
+
 .content>ul>li:nth-child(2) .new .line1{
     width: 75px;height: 2px;background: #6D4D30;
     margin-top: 10px;margin-bottom: 15px;
@@ -405,8 +409,8 @@ html,body{
 .subcontent .submenu ul li a{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: normal;
+    font-size: 16px;
     line-height: 50px;height: 50px;
 }
 
@@ -1070,7 +1074,7 @@ html,body{
     .subcontent.news .submenu ul li{width: calc(100% / 3);}
     .subcontent.news .submenu ul li:last-child{width: 100%;}
 
-    .maincontent img{width: 100%;}
+    .maincontent img{width: 90%;margin: 0 auto;}
 
     .maincontent div{display: none;}
     .maincontent div:first-child{display: block;}
