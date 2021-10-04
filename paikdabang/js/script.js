@@ -11,38 +11,77 @@ $(document).ready(function(){
         slider1.goToPrevSlide();
     });
 
-    // const tabList = document.querySelectorAll(".tab li");
 
-    //     tabList[0].addEventListener("click",function(){
-    //         for(let i=0;i<tabList.length;i++){
-    //             tabList[i].classList.remove("on");
-    //         };
-    //         tabList[0].classList.add("on");
-    //     });
-    //     tabList[1].addEventListener("click",function(){
+    // let winW = window.innerWidth;
 
-    //         for(let i=0;i<tabList.length;i++){
-    //             tabList[i].classList.remove("on");
+    // menuHover();
+    // window.addEventListener("resize",function(){
+    //     winW = window.innerWidth;
+    //     menuHover();
+    //     console.log(winW)
+    // });
+
+    // function menuHover(){
+
+    //     if(winW < 700){
+    //         $(".submenu").hide();
+    //     }
+
+    //     $(".gnb").mouseenter(function(){
+    //         if(win < 700){
+    //             return false;
     //         }
-
-    //         tabList[1].classList.add("on");
-
+    //         $(".submenubar").stop().animate({top:100});
+    //         $(".submenu").fadeIn();
+    //         $(".gnb .submneu").css("height",140)
     //     });
-    //     tabList[2].addEventListener("click",function(){
+    //     $(".gnb").mouseleave(function(){
+    //         $(".submenubar").stop().animate({top:"-100px"});
+    //         $(".submenu").fadeOut();
+    //     });
+    // };
 
-    //         for(let i=0;i<tabList.length;i++){
-    //             tabList[i].classList.remove("on");
-    //         }
-    //         tabList[2].classList.add("on");
+
+    
+        let winW = window.innerWidth;
+        
+
+        menuHover();
+
+        window.addEventListener("resize",function(){
+            winW = window.innerWidth;
+            menuHover();
+
+            console.log(winW)
             
-    //     });
-    //     tabList[3].addEventListener("click",function(){
+        })
 
-    //         for(let i=0;i<tabList.length;i++){
-    //             tabList[i].classList.remove("on");
-    //         }
-    //         tabList[3].classList.add("on");
-    //     });
+        
+        function menuHover(){
+        
+            if(winW < 700){
+                $(".submenu1").hide();
+            }
+
+
+         $(".gnb").mouseenter(function(){
+                if(winW < 700){
+                return false;
+                }
+                $(".submenubar").stop().animate({top:100});
+                $(".submenu1").fadeIn();
+                $(".gnb .submenu1").css("height",200)
+
+            });
+            $(".gnb").mouseleave(function(){
+                $(".submenubar").stop().animate({top:"-100px"});
+                $(".submenu1").fadeOut();
+            });
+        }
+    
+
+
+
 
 
 

@@ -20,25 +20,66 @@
 <body>
     <!-- header  -->
     <header id="main_header">
-        <!-- <div class="submenubar"></div> -->
+        <div class="submenubar"></div>
         <div class="headerwrap">
             
             <div id="header_top">
                 
                 <h1 class="logo">
-                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
                 </h1>
-                <nav class="gnb">
-                    <img src="images/logo.png" alt="">
 
-                    <ul class="clearfix">
-                        <li class="on"><a href="subpage01.html">빽다방</a></li>
-                        <li><a href="subpage02.html">메뉴</a></li>
-                        <li><a href="subpage03.html">소식</a></li>
-                        <li><a href="subpage04.html">커뮤니티</a></li>
-                        <li><a href="subpage05.html">매장안내</a></li>
-                        <li><a href="subpage06.html">창업안내</a></li>
-                        <li><a href="subpage07.html">고객의 소리</a>
+                <nav class="gnb">
+                    <ul class="tab clearfix">
+                        <li>
+                            <a href="subpage01.html" class="on1">빽다방</a>
+                            <ul class="submenu1 clearfix">
+                                <li><a href="#">CEO 인사말</a></li>
+                                <li><a href="#">빽다방 소개</a></li>
+                                <li><a href="#">커피이야기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="subpage02.html" class="on1">메뉴</a>
+                            <ul class="submenu1 clearfix">
+                                <li><a href="#">신메뉴</a></li>
+                                <li><a href="#">커피</a></li>
+                                <li><a href="#">음료</a></li>
+                                <li><a href="#">아이스크림/디저트</a></li>
+                                <li><a href="#">빽스치노</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="subpage03.html" class="on1">소식</a>
+                            <ul class="submenu1 clearfix">
+                                <li><a href="#">전체보기</a></li>
+                                <li><a href="#">소식</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">친절우수매장</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="subpage04.html" class="on1">커뮤니티</a>
+                            <ul class="submenu1 clearfix">
+                                <li><a href="#">커피클래스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="subpage05.html" class="on1">매장안내</a>
+                            <ul class="submenu1 clearfix">
+                                <li><a href="#">매장찾기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="subpage06.html" class="on1">창업안내</a>
+                            <ul class="submenu1 clearfix">
+                                <li><a href="#">가맹정보 및 절차</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="subpage07.html" class="on1">고객의 소리</a>
+                            <ul class="submenu1"></ul>
+                        </li>
                     </ul>
                    
                     
@@ -59,13 +100,13 @@
     <!-- slider  -->
     <div class="sliderwrap">
         <ul class="slider">
-            <li class="li_1st">
+            <li class="li_1st"  id="li_1st">
                 <!-- <img src="images/main_banner01.jpg" alt=""> -->
             </li>
-            <li class="li_2st">
+            <li class="li_2st" id="li_2st">
                 <!-- <img src="images/main_banner02.jpg" alt=""> -->
             </li>
-            <li class="li_3st">
+            <li class="li_3st" id="li_3st">
                 <!-- <img src="images/main_banner03.jpg" alt=""> -->
             </li>
         </ul>
