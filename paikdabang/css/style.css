@@ -68,7 +68,6 @@ html,body{
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
 
-    /* font-family: 'Montserrat'; */
 }
 .content>ul>li h3{
     font-size: 25px;
@@ -108,15 +107,18 @@ html,body{
 /* content .2 new */
 .content>ul>li:nth-child(2){
     width: 75%;
-    background-image: url(../images/content_01.png);
+    _background-image: url(../images/content_01.png);
     cursor: pointer;
     padding: 35px;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;overflow: hidden;
     
 }
+.content>ul>li:nth-child(2) img{position: absolute;top: 0;left: 0;transition: 0.3s;}
+.content>ul>li:nth-child(2) img:hover{transform:  scale(1.1);}
 
-
+.content>ul>li:nth-child(2) .new{position: relative;}
 
 .content>ul>li:nth-child(2) .new .line1{
     width: 75px;height: 2px;background: #6D4D30;
@@ -129,13 +131,18 @@ html,body{
 /* content .3 ice */
 .content>ul>li:nth-child(3){
     width: 50%;
-    background-image: url(../images/content_02.png);
+    _background-image: url(../images/content_02.png);
     cursor: pointer;
     padding: 35px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;overflow: hidden;
 }
+.content>ul>li:nth-child(3) img{position: absolute;top: 0;left: 0;transition: 0.3s;}
+.content>ul>li:nth-child(3) img:hover{transform:  scale(1.1);}
+.content>ul>li:nth-child(3) .ice{position: relative;}
+
 .content>ul>li:nth-child(3) .ice{}
 .content>ul>li:nth-child(3) .ice .line2{
     width: 45px;height: 2px;background: #071F60;
@@ -163,13 +170,16 @@ html,body{
 /* content .6  story*/
 .content>ul>li:nth-child(6){
     height: 620px;
-    background-image: url(../images/content_03.png);
+    _background-image: url(../images/content_03.png);
     cursor: pointer;
     padding: 35px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;overflow: hidden;
 }
+.content>ul>li:nth-child(6) img{position: absolute;top: 0;left: 0;transition: 0.3s;}
+.content>ul>li:nth-child(6) img:hover{transform:  scale(1.1);}
 .content>ul>li:nth-child(6) .story{position: relative;}
 .content>ul>li:nth-child(6) h5{color: #564E00;}
 .content>ul>li:nth-child(6) h3{margin-top: 15px;margin-bottom: 35px;}
@@ -189,13 +199,17 @@ html,body{
 /* content .8 dessert */
 .content>ul>li:nth-child(8){
     width: 50%;
-    background-image: url(../images/content_04.png);
+    _background-image: url(../images/content_04.png);
     padding: 35px;
+    cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;overflow: hidden;
 }
-.content>ul>li:nth-child(8) .dessert{}
+.content>ul>li:nth-child(8) img{position: absolute;top: 0;left: 0;transition: 0.3s;}
+.content>ul>li:nth-child(8) img:hover{transform:  scale(1.1);}
+.content>ul>li:nth-child(8) .dessert{position: relative;}
 .content>ul>li:nth-child(8) .dessert .line3{
     width: 125px;height: 2px;background: #fff;
     margin-top: 10px;margin-bottom: 15px;
