@@ -53,10 +53,12 @@
 .advan .icon{
     width: 80px;height: 80px;border-radius: 40px;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
-    background: #fff;
 }
 
 .advan .title1st{color: var(--primary-color);}
+.advan .title2st{color: var(--secondary-color);}
+.advan .title3st{color: var(--third-color);}
+
 .advan .img-view{position: relative;height: 400px;}
 .advan .img-view img{
     position: absolute;border-radius: 5px;
@@ -65,12 +67,17 @@
 
 .advan .img-view .img-1st{right: 0;top: 0;width: 400px;}
 .advan .img-view .img-2st{left: 0;bottom: 0;width: 300px;}
+.advan .img-view .img-3st{left: 0;top: 0;width: 400px;}
+.advan .img-view .img-4st{right: 10px;bottom: 10px;width: 400px;}
+.advan .img-view .img-5st{right: 0;top: 0;width: 400px;}
+.advan .img-view .img-6st{left: 0;bottom: 0;width: 300px;}
 .advan{position: relative;}
+
 .advan .bgcolor1{
     position: absolute;
     width: 100%;height: 1000px;
     background-image: linear-gradient(316deg, #02ccba 0%, #aa7ced 100%);
-    transform: skew(0,15deg);
+    transform: skew(0,10deg);
     left: 0;top: 270px;
 }
 
