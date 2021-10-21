@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-
+#headerwrap{position: relative;}
+.container{position: absolute;top: 0;z-index: 1;}
 .form-control {
     display: block;
     width: 100%;
@@ -19,4 +20,9 @@
 }
 input{text-align: right;width: 164px;height: 20px;}
 
+/* .swiper{position: relative;top: 0;} */
 .swiper-slide img{object-fit: cover;}
+
+.slidetxt{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.slidetxt h1{font-size: 100px;font-family: 'Lora', serif;line-height: 90px;}
+.slidetxt p{font-size: 12px;font-family: 'Rubik', sans-serif;}
