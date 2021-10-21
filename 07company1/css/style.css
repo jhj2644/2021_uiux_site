@@ -85,3 +85,23 @@
     background: url(../images/contact-cover.jpg) no-repeat center fixed;
     background-size: cover;
 }
+
+
+/* subpage company */
+
+.subpage{
+    _height: 300px;background: skyblue;position: relative;
+    background-repeat: no-repeat;background-position: center;
+    background-size: cover;
+
+}
+.subpage.company{
+    background-image: url(../images/contact-cover.jpg);
+}
+.subpage.cata{
+    background-image: url(../images/contact-cover.jpg);
+}
+
+
+/* subcontent */
+.subcontent{position: relative;}
