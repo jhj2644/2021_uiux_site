@@ -14,7 +14,7 @@
     <header id="headerWrap" class="mb-3 mb-lg-5">
         <div class="bgcolor"></div>
         <div class="container px-md-0">
-            <nav class="navbar navbar-expand-sm navbar-dark px-md-0">
+            <nav class="navbar navbar-expand-sm navbar-dark px-md-0 onView">
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" style="width: 180px;"></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -416,6 +416,59 @@
             }
 
         });
+
+
+
+        
+
+
+        $(window).scroll(function(){
+            let scrollY = $(window).scrollTop(); //window.pageYOffset
+            console.log(scrollY)
+
+            if(scrollY > 300){
+                $(".navbar").addClass("fixed-top bg-dark px-lg-5")
+
+            }else{
+                $(".navbar").removeClass("fixed-top bg-dark px-lg-5")
+            }
+        });
+
+
+        let winWidth = $(window).width();
+        winSize();
+
+
+        $(window).resize(function(){
+            let winWidth = $(window).width();
+            console.log(winWidth);
+            winSize(); 
+            
+        })
+
+
+        function winSize(){
+            let onView = true;
+            if(windWidth < 768){
+
+
+                $(".navbar-toggler").click(function(){
+                // $(".navbar").toggleClass("onView")
+
+                    if(onView == true){
+                        $(".navbar").addClass("onView");
+                        onView = false;
+                    }else{
+                        $(".navbar").removeClass("onView");
+                        onView = true;
+                    }
+
+                })
+            }else{
+                $(".navbar").removeClass("onView")
+                $(".navbar-collapse").removeClass("show")
+            }
+        }
     </script>
 
   </body>
