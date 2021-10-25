@@ -1,6 +1,6 @@
 @charset "utf-8";
 .navbar-dark .navbar-nav .nav-link{color:white !important}
-#headerwrap{}
+
 
 form{height: 35px;}
 .form-control{
@@ -63,3 +63,31 @@ input{text-align: right;width: 164px;height: 20px;}
 .content1 .card-body h6{font-size: 18px;line-height: 24px;color: #DFCEC2;font-family: 'Rubik', sans-serif;}
 .content1 .card-body h2{font-size: 36px;line-height: 48px;color: #3C3C3C;font-weight: 500;font-family: 'Rubik', sans-serif;}
 .content1 .card-body p{font-size: 18px;line-height: 24px;color: #A7A7A7;font-family: 'Rubik', sans-serif;}
+
+
+
+/* content2  */
+.content2 p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    
+}
+.content2 p:last-child{color: #DFCEC2;font-weight: 500;}
+
+
+
+/* content3  */
+
+.row div{position: relative;}
+.content3 p{
+    position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);color: #fff;
+}
+.clo1,.clo2{width: 471px;height: 478px;}
+.clo3{width: 661px;height: 948px;}
+.clo4,.clo5{width: 757px;height: 478px;}
+
+
+/* footer */
+.footer{height: 400px;width: 100%;background: #F8F3F0;}
