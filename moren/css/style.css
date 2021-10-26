@@ -1,4 +1,7 @@
 @charset "utf-8";
+
+
+
 .navbar-dark .navbar-nav .nav-link{color:white !important}
 
 
@@ -91,3 +94,15 @@ input{text-align: right;width: 164px;height: 20px;}
 
 /* footer */
 .footer{height: 400px;width: 100%;background: #F8F3F0;}
+
+
+
+
+
+/* subpage */
+.headerwrap{background: #fff;}
+.subcontent01{padding-top: 120px;}
+.subcontent02{padding-top: 120px;}
+
+/* div.user i{color: #DFCEC2;} */
+
