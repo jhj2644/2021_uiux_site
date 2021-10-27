@@ -109,6 +109,21 @@ input{text-align: right;width: 164px;height: 20px;}
     font-family: 'Rubik';margin-bottom: 0;
 }
 
+@media screen and (min-width:768px){
+    .clo1,.clo2,.clo4,.clo5{height:470px !important;overflow: hidden;}
+    .clo3{height: calc(470 * 2px);overflow: hidden;}
+    .content3 img{
+        position: absolute;height: 100%;
+        transform:translateX(-50%);
+        left:50%;overflow: hidden;
+    }
+}
+
+@media screen and (max-width:767px){
+    .content3 img{width: 100%;}
+}
+
+
 
 /* content4 */
 .content4 div img{border-radius: 8px;}
@@ -134,16 +149,32 @@ input{text-align: right;width: 164px;height: 20px;}
 }
 
 
+@media screen and (min-width:768px){}
+
+
+
+
 
 /* content5 */
-.content5{height: 580px;background: #F8F3F0;}
-.content5 .video img{position: relative;}
+.content5{background: #F8F3F0;}
+.content5 .video{position: relative;}
 .content5 .moren_video img{
     position: absolute;
     top: 50%;left: 50%;
     transform: translate(-50%,-50%);
 }
-.content5 .videoTxt{width: 550px;}
+.content5 h6{color: #DFCEC2;}
+.content5 p{color: #908D89;line-height: 28px;}
+.content5 .view{
+    border: 1px solid #B6B6B6;width: 120px;
+    border-radius: 5px;
+}
+.content5 .view a{
+    font-size: 15px;color: #8A888A;
+    line-height: 40px;display: block;
+}
+
+
 
 
 
