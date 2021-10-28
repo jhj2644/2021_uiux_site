@@ -5,6 +5,10 @@
 .navbar-dark .navbar-nav .nav-link{color:white !important}
 
 
+
+
+
+
 form{height: 35px;}
 .form-control{
     display: block;
@@ -22,7 +26,9 @@ form{height: 35px;}
     border-right: none;
     border-radius: 0;
 }
-input{text-align: right;width: 164px;height: 20px;}
+input{text-align: right;}
+
+
 
 
 
@@ -78,9 +84,14 @@ input{text-align: right;width: 164px;height: 20px;}
     .content1 .cardwrap h2{font-size: 25px;line-height: 30px;}
     .content1 .cardwrap p{font-size: 15px;line-height: 20px;}
 }
+/* 
+.content1 .card-img{overflow: hidden;}
+.content1 .card-img:hover img{transform: scale(1.1);transition: 0.3s linear;} */
 
-/* .content1 .card-img{overflow: hidden;} */
-.content1 .card-body:hover .card-img.img{transform: scale(1.1);transition: 0.3s;}
+
+
+
+
 
 
 /* content2  */
@@ -97,6 +108,17 @@ input{text-align: right;width: 164px;height: 20px;}
     color: #DFCEC2;font-weight: 500;
     font-family: 'Rubik';
 }
+.content2 .mouse1{position: absolute;top: 0;left: 0;}
+.content2 .mouse1{opacity: 0;transition: opacity 0.9s;}
+.content2 .sellers:hover .mouse1{opacity: 1;}
+
+.content2 .mouse2{position: absolute;top: 0;left: 0;}
+.content2 .mouse2{opacity: 0;transition: opacity 0.9s;}
+.content2 .sellers:hover .mouse2{opacity: 1;}
+
+.content2 .mouse3{position: absolute;top: 0;left: 0;}
+.content2 .mouse3{opacity: 0;transition: opacity 0.9s;}
+.content2 .sellers:hover .mouse3{opacity: 1;}
 
 
 
@@ -122,6 +144,12 @@ input{text-align: right;width: 164px;height: 20px;}
 @media screen and (max-width:767px){
     .content3 img{width: 100%;}
 }
+.content3 .row div{overflow: hidden;transition: 0.3s;}
+.content3 .clo1:hover{transform: scale(1.1);}
+.content3 .clo2:hover{transform: scale(1.1);}
+.content3 .clo3:hover{transform: scale(1.1);}
+.content3 .clo4:hover{transform: scale(1.1);}
+.content3 .clo5:hover{transform: scale(1.1);}
 
 
 
@@ -149,7 +177,7 @@ input{text-align: right;width: 164px;height: 20px;}
 }
 
 
-@media screen and (min-width:768px){}
+
 
 
 
@@ -174,6 +202,14 @@ input{text-align: right;width: 164px;height: 20px;}
     line-height: 40px;display: block;
 }
 
+
+/* content6 */
+.content6 h2{font-family: 'Rubik';}
+.content6 h6{color: #DFCEC2;font-family: 'Rubik';}
+
+/* @media screen and (max-width:767px){
+    .content6 img{width: 100%;}
+} */
 
 
 
