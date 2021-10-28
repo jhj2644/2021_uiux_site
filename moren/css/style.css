@@ -108,16 +108,25 @@ input{text-align: right;}
     color: #DFCEC2;font-weight: 500;
     font-family: 'Rubik';
 }
-.content2 .mouse1{position: absolute;top: 0;left: 0;}
-.content2 .mouse1{opacity: 0;transition: opacity 0.9s;}
+.content2 .mouse1{
+    position: absolute;top: 0;left: 0;
+    opacity: 0;transition: opacity 0.9s;
+    cursor: pointer;
+}
 .content2 .sellers:hover .mouse1{opacity: 1;}
 
-.content2 .mouse2{position: absolute;top: 0;left: 0;}
-.content2 .mouse2{opacity: 0;transition: opacity 0.9s;}
+.content2 .mouse2{
+    position: absolute;top: 0;left: 0;
+    opacity: 0;transition: opacity 0.9s;
+    cursor: pointer;
+}
 .content2 .sellers:hover .mouse2{opacity: 1;}
 
-.content2 .mouse3{position: absolute;top: 0;left: 0;}
-.content2 .mouse3{opacity: 0;transition: opacity 0.9s;}
+.content2 .mouse3{
+    position: absolute;top: 0;left: 0;
+    opacity: 0;transition: opacity 0.9s;
+    cursor: pointer;
+}
 .content2 .sellers:hover .mouse3{opacity: 1;}
 
 
@@ -132,8 +141,8 @@ input{text-align: right;}
 }
 
 @media screen and (min-width:768px){
-    .clo1,.clo2,.clo4,.clo5{height:470px !important;overflow: hidden;}
-    .clo3{height: calc(470 * 2px);overflow: hidden;}
+    .clo1,.clo2,.clo4,.clo5{height:470px !important;overflow: hidden;cursor: pointer;}
+    .clo3{height: calc(470 * 2px);overflow: hidden;cursor: pointer;}
     .content3 img{
         position: absolute;height: 100%;
         transform:translateX(-50%);
