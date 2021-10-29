@@ -159,10 +159,11 @@ input{text-align: right;}
 .content3 .clo3:hover{transform: scale(1.1);}
 .content3 .clo4:hover{transform: scale(1.1);}
 .content3 .clo5:hover{transform: scale(1.1);}
+/* .content3 .row{flex-wrap: flex;display: flex;height: auto;} */
 
 
 
-/* content4 */
+/* content4  new product*/
 .content4 div img{border-radius: 8px;}
 .content4 h2{font-family: 'Rubik';}
 .content4 h6{color: #DFCEC2;font-family: 'Rubik';}
@@ -176,14 +177,47 @@ input{text-align: right;}
     color: #DFCEC2;font-weight: 500;
     font-family: 'Rubik';
 }
+
+.content4 .sellers{cursor: pointer;position: relative;}
+.content4 .bg{
+    width: 100%;height: 100%;background-color: #000;
+    position: absolute;top: 0;
+    opacity: 0;transition: 0.3s linear;
+    border-radius: 8px;
+}
+.content4 .sellers:hover .bg{opacity: 0.3;}
+
+.content4 .circle{
+    position: absolute;width: 40px;height: 40px;border-radius: 50%;
+    border: 2px solid #fff;top: 50%;left: 50%;transform: translate(-50%,-50%);
+}
+.circle .bar1,.circle .bar2{
+    width: 15px;height: 2px;background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content4 .bar1{
+    transform: translate(-50%,-50%) rotate(90deg);
+}
+.circle{display: none;transition: all ease 1s;}
+.content4 .sellers:hover .circle{display: block;}
+.circle:hover{transform:translate(-50%,-50%) rotate(720deg);}
+
+
 .content4 .view{
     border: 1px solid #B6B6B6;width: 120px;
+    height: 40px;
     border-radius: 5px;
+    
 }
 .content4 .view a{
     font-size: 15px;color: #8A888A;
     line-height: 40px;display: block;
 }
+
+
 
 
 
@@ -216,9 +250,8 @@ input{text-align: right;}
 .content6 h2{font-family: 'Rubik';}
 .content6 h6{color: #DFCEC2;font-family: 'Rubik';}
 
-/* @media screen and (max-width:767px){
-    .content6 img{width: 100%;}
-} */
+.content6 .swiper-slide img{transition: 0.3s;}
+.content6 .swiper-slide:hover img{transform: scale(1.1);transition: 0.3s;}
 
 
 
