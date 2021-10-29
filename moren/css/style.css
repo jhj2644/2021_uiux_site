@@ -270,5 +270,16 @@ input{text-align: right;}
 .headerwrap{background: #fff;}
 .subcontent01{padding-top: 120px;}
 .subcontent02{padding-top: 120px;}
+/* .wishlistWrap{padding-top: 120px;} */
 
+.subvisual{
+
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+
+.subvisual.wish{
+    background-image: url(../images/wishlist_bg.jpg);
+}
 
