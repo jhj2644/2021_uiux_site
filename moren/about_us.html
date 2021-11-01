@@ -14,11 +14,11 @@
     <title>about us</title>
   </head>
   <body>
-    <header id="headerwrap" class="fixed-top">
-        <div class="navWrap ">
-            <div class="container-fluid">
+    <header id="headerwrap">
+        <div class="navWrap bg-dark">
+            <div class="container-fluid px-0">
                 <nav class="navbar navbar-expand-md navbar-dark">
-                    <a class="navbar-brand pr-5" href="#"><img src="images/logo-light.svg" alt=""></a>
+                    <a class="navbar-brand pr-5" href="index.html"><img src="images/logo-light.svg" alt=""></a>
                     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -95,20 +95,26 @@
     </header>
 
 
-    <div class="subcontent02 about">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-8 offset-md-2 text-center">
+   
+    <div class="subvisual about">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-md-8 offset-md-2 text-center shop text-white">
                     <h2>ABOUT US</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, maxime.</p>
+                    <p>Our success and company history</p>
                 </div>
             </div>
+        </div>
+
+    </div>
+
+    <div class="aboutwrap">
+        <div class="container">
             <div>
-                <img src="images/subcontent02.png" alt="" class="img-fluid">
+                <img src="images/aboutus.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
-
 
 
 
@@ -156,6 +162,57 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.9/swiper-bundle.min.js" integrity="sha512-bPNHwutl0bNsjHtw+AtR2xvp0BLtpm9mN6LcqzDZifcQSYv/dPVvND245WZVst+m7GhYHX647RoaL9w6VVraxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+    <script>
+        
+        let winWidth = 0;
+          
+          
+          $(window).resize(function(){
+              winSize()
+              console.log(winWidth)
+          })
+          
+          function winSize(){
+              winWidth = $(window).width()
+              
+              let onView = true;
+          
+              if(winWidth < 768){
+                  
+                  $(".navbar-toggler").click(function(){
+                      if(onView == true){
+                          $(".navWrap").addClass("onView bg-dark")
+                          onView = false;
+                      }else{
+                          $(".navWrap").removeClass("onView bg-dark");
+                          onView = true;
+                      }
+                      
+                  });
+              }else{
+                  $(".navbar").removeClass("onView");
+                  $(".navbar-collapse").removeClass("show");
+              }
+  
+          }
+          winSize()
+  
+          $(window).scroll(function(){
+              let scrollY = $(window).scrollTop();
+              console.log(scrollY)
+              if(scrollY > 300){
+                  $(".navbar").addClass("fixed-top bg-dark")
+              }else{
+                  $(".navbar").removeClass("fixed-top bg-dark px-5")
+              }
+          });
+  
+      
+      </script>
 
 
     

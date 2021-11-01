@@ -273,13 +273,47 @@ input{text-align: right;}
 /* .wishlistWrap{padding-top: 120px;} */
 
 .subvisual{
-
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
 }
 
+
+.subvisual.about{
+    background-image: url(../images/aboutus_bg.png);
+}
+.subvisual.blog{
+    background-image: url(../images/blog_bg.jpg);
+}
+.subvisual.cart{
+    background-image: url(../images/wishlist_bg.jpg);
+}
+.subvisual.checkout{
+    background-image: url(../images/blog_bg.jpg);
+}
+.subvisual.collections{
+    background-image: url(../images/collections_bg.jpg);
+}
+.subvisual.compare{
+    background-image: url(../images/compare_bg.jpg);
+}
+.subvisual.contact{
+    background-image: url(../images/contact_bg.jpg);
+}
+.subvisual.faqs{
+    background-image: url(../images/faqs_bg.jpg);
+}
+.subvisual.myaccount{
+    background-image: url(../images/aboutus_bg.png);
+}
+.subvisual.order{
+    background-image: url(../images/wishlist_bg.jpg);
+}
+.subvisual.shop{
+    background-image: url(../images/blog_bg.jpg);
+}
 .subvisual.wish{
     background-image: url(../images/wishlist_bg.jpg);
 }
+
 
