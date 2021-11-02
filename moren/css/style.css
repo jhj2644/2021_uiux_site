@@ -27,6 +27,10 @@ form{height: 35px;}
     border-radius: 0;
 }
 input{text-align: right;}
+input::placeholder{color: #fff !important;}
+input::-webkit-input-placeholder{color: #fff !important;}
+input::-ms-input-placeholder{color: #fff !important;}
+
 
 
 
