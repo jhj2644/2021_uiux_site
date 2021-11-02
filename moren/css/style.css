@@ -260,7 +260,9 @@ input{text-align: right;}
 
 
 /* footer */
-.footer{height: 400px;width: 100%;background: #F8F3F0;}
+.footer{_height: 400px;width: 100%;background: #F8F3F0;}
+.footer .icon i{color:#c2a18a;}
+/* .footer .icon{width: 160px;} */
 
 
 
