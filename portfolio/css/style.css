@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+html,body{height: 100vh;}
+.section.page1{background: #FFEC48;}
+.section.page1 .deco01{width: 400px;position: absolute;top: -100px;left: -100px;}
+.section.page1 .deco02{width: 50vw;position: absolute;top: -250px;right: -300px;}
+
+.section.page1 p{font-family: 'Single Day';font-size: 6em;}
+.section.page1 p:first-of-type{position: relative;}
+.section.page1 p:first-of-type::after{
+    content: "";display: block;
+    width: 700px;height: 0.7vh;
+    background: #212529;
+    position: absolute;left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+.section.page1 p:last-of-type{font-family: 'Single Day';font-size: 3em;}
+.section.page1 .light{position: absolute;top: -100px;}
+
+
+.scrollBtn{
+    position: absolute;bottom: 30px;
+    left: 50%;transform: translateX(-50%);
+    animation: xScroll 0.8s infinite alternate;
+}
+@keyframes xScroll{to{bottom: 50px;}}
+.scrollBtn img{width: 60px;}
