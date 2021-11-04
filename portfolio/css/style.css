@@ -3,20 +3,27 @@
 html,body{height: 100vh;}
 .section.page1{background: #FFEC48;}
 .section.page1 .deco01{width: 400px;position: absolute;top: -100px;left: -100px;}
-.section.page1 .deco02{width: 50vw;position: absolute;top: -250px;right: -300px;}
+.section.page1 .deco02{width: 55vw;position: absolute;top: -300px;right: -350px;}
 
-.section.page1 p{font-family: 'Single Day';font-size: 6em;}
+.section.page1 p.title{
+    font-family: 'Single Day';font-size: 6em;  _-webkit-text-stroke: 2px #fff;
+    text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff;  
+}
 .section.page1 p:first-of-type{position: relative;}
 .section.page1 p:first-of-type::after{
     content: "";display: block;
-    width: 700px;height: 0.7vh;
+    width: 700px;height: 1vh;
     background: #212529;
     position: absolute;left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
+    border: 2px solid #fff;
 }
 .section.page1 p:last-of-type{font-family: 'Single Day';font-size: 3em;}
-.section.page1 .light{position: absolute;top: -100px;}
 
 
 .scrollBtn{
