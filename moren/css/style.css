@@ -339,7 +339,11 @@ input::-ms-input-placeholder{color: #fff !important;}
 .content6 .swiper-slide img{transition: 0.3s;}
 .content6 .swiper-slide:hover img{transform: scale(1.1);transition: 0.3s;}
 
-
+@media screen and (max-width:1600px){
+    .content6 .swiper img{
+        width: 100%;
+    }
+}
 
 
 
