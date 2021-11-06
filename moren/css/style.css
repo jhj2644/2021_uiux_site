@@ -113,10 +113,11 @@ input::-ms-input-placeholder{color: #fff !important;}
     font-family: 'Rubik';
 }
 .content2 .mouse1{
-    position: absolute;top: 0;left: 0;
+    position: absolute;_top: 0;left: 0;
     opacity: 0;transition: opacity 0.9s;
     cursor: pointer;
 }
+.content2 .sellers{position: relative;}
 .content2 .sellers:hover .mouse1{opacity: 1;}
 
 .content2 .mouse2{
@@ -170,12 +171,52 @@ input::-ms-input-placeholder{color: #fff !important;}
 .content3 .shorts,.content3 .bags,.content3 .accessories
 {
     width: 250px;height: 250px;
-    border-radius: 125px;background: white;
-    transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    transition: 0.8s;overflow: hidden;
+    border-radius: 10px;background: white;
+    /* transform-style: preserve-3d; */
+    /* transform: rotateY(180deg); */
+    _transition: 0.8s;overflow: hidden;
+    position: relative; transform-style: preserve-3d;
+     _perspective: 1000; cursor: pointer;
 }
-.content3 .shirts .item img{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+
+.item {backface-visibility: hidden; transition: 0.5s linear;} 
+.front {position: relative; z-index: 2; opacity: 1; transform: rotateY(0deg);} 
+.back {position: absolute; z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.shirts:hover > .front {z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.shirts:hover > .back {z-index: 2; opacity: 1; transform: rotateY(0)}
+
+.dress:hover > .front {z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.dress:hover > .back {z-index: 2; opacity: 1; transform: rotateY(0)}
+
+.knitwear:hover > .front {z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.knitwear:hover > .back {z-index: 2; opacity: 1; transform: rotateY(0)}
+
+.t-shirts:hover > .front {z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.t-shirts:hover > .back {z-index: 2; opacity: 1; transform: rotateY(0)}
+
+.brazers:hover > .front {z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.brazers:hover > .back {z-index: 2; opacity: 1; transform: rotateY(0)}
+
+.pants:hover > .front {z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.pants:hover > .back {z-index: 2; opacity: 1; transform: rotateY(0)}
+
+.shorts:hover > .front {z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.shorts:hover > .back {z-index: 2; opacity: 1; transform: rotateY(0)}
+
+.bags:hover > .front {z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.bags:hover > .back {z-index: 2; opacity: 1; transform: rotateY(0)}
+
+.accessories:hover > .front {z-index: 1; opacity: 0; transform: rotateY(180deg);} 
+.accessories:hover > .back {z-index: 2; opacity: 1; transform: rotateY(0)}
+
+.content3 .item img{
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
 
 .content3 .shirts,.content3 .dress,.content3 .knitwear,
 .content3 .t-shirts,.content3 .brazers,.content3 .pants,
@@ -186,6 +227,22 @@ input::-ms-input-placeholder{color: #fff !important;}
 .content3 .t-shirts p,.content3 .brazers p,.content3 .pants p,
 .content3 .shorts p,.content3 .bags p,.content3 .accessories p
 {font-family: 'Rubik';margin-bottom: 0;}
+
+
+@media screen and (max-width:1000px){
+    .content3 .shirts,.content3 .dress,.content3 .knitwear,
+    .content3 .t-shirts,.content3 .brazers,.content3 .pants,
+    .content3 .shorts,.content3 .bags,.content3 .accessories
+    {
+        width: 200px;height: 200px;
+        border-radius: 10px;background: white;
+        /* transform-style: preserve-3d; */
+        /* transform: rotateY(180deg); */
+        _transition: 0.8s;overflow: hidden;
+        position: relative; transform-style: preserve-3d;
+        _perspective: 1000; cursor: pointer;
+    }
+}
 
 
 
