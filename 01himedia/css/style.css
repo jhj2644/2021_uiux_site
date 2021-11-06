@@ -55,21 +55,21 @@
     #header .topWrap{display: none;}
     #header .navWrap{display: none;}
     .toggle{display: block;}
-    #header .logWrap{}
     #header .logWrap h1{float: left;font-size: 30px;line-height: 35px;}
     #header .logWrap .toggle{float: right;}
 
 
     /* visual */
-    .visualWrap{background: #203b6a url(../images/visual.bg01.png) no-repeat ;
-                background-size: cover;overflow: hidden;
-               
-}
+    /* .visualWrap{background: #223d6c url(../images/visual.bg0101.png) no-repeat ;
+                background-size: cover;overflow: hidden;        
+    } */
+    .visualWrap{background: #223d6c url(../images/visual.bg0101.png) no-repeat !important;}
     .visualWrap .visual{height: 600px;padding: 16px;position: relative;padding-top: 30px;}
     .visualWrap .visual .visualTxt{
         font-size: 79px;font-weight: bold;color: #fff;
         line-height: 70px;text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-    }.visualWrap .visual img{position: absolute;bottom: -80px;right: -55px;}
+    }
+    .visualWrap .visual img{position: absolute;bottom: -80px;right: -55px;}
 
     
     /* banner */
