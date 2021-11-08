@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullpage</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section page1">
+            <div class="bgimgWrap">
+                <div class="bgimg1">
+                    <div class="bgimg2"></div>
+                    <div class="bgimg3"></div>
+                </div>
+            </div>
+
+            <div class="loginWrap">
+                <div class="login1"></div>
+                <div class="login2"></div>
+            </div>
+
+
+            <div class="headerWrap">
+                <div class="bgimg4"></div>
+                <div class="textWrap">
+                    <p class="text1">당신의<br>소중한<br>일상.</p>
+                    <p class="text2">더 가치있는 것들로<br>채워볼까요?</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="section page2">Some section</div>
+        <div class="section page3">Some section</div>
+        <div class="section page4">Some section</div>
+    </div>
+    
+
+
+
+
+
+    <script>
+        // $(function(){
+        //     $("#fullpage").fullpage({
+             
+        //     });
+        // });
+        $(document).ready(function(){
+            $('#fullpage').fullpage({
+                navigation:true,
+            });
+        })
+    </script>
+</body>
+</html>
