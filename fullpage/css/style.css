@@ -54,6 +54,13 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 
 /* page1  */
 
+.scrollBtn{
+    position: absolute;bottom: 30px;
+    left: 50%;transform: translateX(-50%);
+    animation: xScroll 0.8s infinite alternate;
+}
+.scrollBtn img{width: 60px;}
+@keyframes xScroll {to{bottom: 50px;}}
 .mainWrap{position: absolute;left: 20%;top: 10%;}
 .page1 .bgimg1{
     width: 65px;height: 25px;margin-bottom: 20px;
@@ -73,7 +80,8 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
     font-size: 22px;
     font-weight: bolder;
 }
-
+.page1 .mainWrap{opacity: 0;transition: 2s;}
+.page1 .mainWrap.move{opacity: 1;}
 
 
 
@@ -137,8 +145,12 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    position: absolute;top: 50%;left: 300px;
     transform: translate(0,-50%);
+    position: absolute;top: 50%;left: -9999px;
+    transition: 0.3s;
+}
+.page2 .shelf1.move{
+    position: absolute;top: 50%;left: 300px;
 }
 .page2 .shelf2{
     width: 436px;height: 76px;
@@ -146,6 +158,10 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    position: absolute;top: 30%;right: -9999px;
+    transition: 0.3s;
+}
+.page2 .shelf2.move{
     position: absolute;top: 30%;right: 200px;
 }
 .page2 .shelf3{
@@ -154,12 +170,26 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    position: absolute;bottom: 30%;right: -9999px;
+    transition: 0.3s;
+}
+.page2 .shelf3.move{
     position: absolute;bottom: 30%;right: 350px;
 }
 
 
 /* page3  */
-.page3 .mainWrap{z-index: 2;}
+.page3 .mainWrap{z-index: 2;opacity: 0;transition: 2s;}
+.page3 .mainWrap.move{opacity:1;}
+.page3 .book1st{right: -9999px;position: relative;transition: 0.3s;opacity: 0;}
+.page3 .book1st.move{right: 0;position: relative;opacity: 1;}
+.page3 .book2nd{right: -9999px;position: relative;transition: 0.3s;opacity: 0;transition-delay: 0.1s;}
+.page3 .book2nd.move{right: 0;position: relative;opacity: 1;}
+.page3 .book3rd{right: -9999px;position: relative;transition: 0.3s;opacity: 0;transition-delay: 0.2s;}
+.page3 .book3rd.move{right: 0;position: relative;opacity: 1;}
+.page3 .book4th{right: -9999px;position: relative;transition: 0.3s;opacity: 0;transition-delay: 0.3s;}
+.page3 .book4th.move{right: 0;position: relative;opacity: 1;}
+
 .page3 .bookWrap>div img{opacity: 0.9;}
 .page3 .textWrap .text1{
     font-family: 'GowunBatang-bold';
@@ -178,6 +208,10 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 
 /* page4 */
 .page4{background: #343434;}
+.page4 .mainWrap{z-index: 2;position: absolute;left: -9999px;transition: 0.3s;}
+.page4 .mainWrap.move{position: absolute;left: 20%;}
+.page4 .container{position: absolute;right: -9999px;transition: 0.3s;}
+.page4 .container.move{position: absolute;right: 20%}
 .page4 .textWrap .text1{
     font-family: 'GowunBatang-bold';
     font-size: 76px;
@@ -193,7 +227,9 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 
 
 /* page5  */
-.page5 .mainWrap{z-index: 2;}
+/* .page5{overflow: hidden;}s */
+.page5 .mainWrap{z-index: 2;opacity: 0;transition: 2s;}
+.page5 .mainWrap.move{opacity:1;}
 .page5{background: #FDFAF3;}
 .page5 .textWrap .text1{
     font-family: 'GowunBatang-bold';
@@ -207,13 +243,16 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 .page5 .textWrap .text3,.page5 .textWrap .text4{
     font-size: 14px;font-weight: 400;font-family: 'Noto Sans KR', sans-serif;
 }
-.page5 .bookcard1{position: absolute;top: -400px;}
-.page5 .bookcard2{position: absolute;right: -130px;top: -300px;}
+.page5 .bookcard1{position: absolute;top: 0;opacity: 0;transition: 0.3s;}
+.page5 .bookcard1.move{position: absolute;top: -400px;opacity: 1;}
+.page5 .bookcard2{position: absolute;right: -130px;top: 0;opacity: 0;transition: 0.3s;transition-delay: 0.2s;}
+.page5 .bookcard2.move{position: absolute;right: -130px;top: -300px;opacity: 1;}
 
 
 /* page6 */
 .page6{background: #542385;}
-.page6 .textWrap{margin-bottom: 200px;}
+.page6 .mainWrap{z-index: 2;opacity: 0;transition: 2s;}
+.page6 .mainWrap.move{opacity:1;}
 .page6 .textWrap .text1{
     font-family: 'GowunBatang-bold';
     font-size: 76px;
@@ -226,10 +265,36 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 .page6 .textWrap .text3,.page6 .textWrap .text4{
     font-size: 14px;font-weight: 400;font-family: 'Noto Sans KR', sans-serif;
 }
-.page6 .giftbox{position: relative;right: 30%;_transform: translateX(-50%);}
-.page6 .container img{width: 280px;}
+.page6 .container img{width: 320px;}
+.page6 .gift1{right: -9999px;position: relative;transition: 0.3s;opacity: 0;}
+.page6 .gift1.move{right: 0;position: relative;opacity: 1;}
+.page6 .gift2{right: -9999px;position: relative;transition: 0.3s;opacity: 0;transition-delay: 0.1s;}
+.page6 .gift2.move{right: 0;position: relative;opacity: 1;}
+.page6 .gift3{right: -9999px;position: relative;transition: 0.3s;opacity: 0;transition-delay: 0.2s;}
+.page6 .gift3.move{right: 0;position: relative;opacity: 1;}
 
 
+
+
+/* page7 */
+.page7{background: #343434;}
+/* .page7 .mainWrap{z-index: 2;position: absolute;left: -9999px;transition: 0.3s;}
+.page7 .mainWrap.move{position: absolute;left: 20%;} */
+.page7 .mainWrap{z-index: 2;position: absolute;left: -9999px;transition: 0.3s;left: -9999px;top: 12%;}
+.page7 .mainWrap.move{position: absolute;left: 20%;}
+.page7 .yellow{position: relative;right: -9999px;transition: 0.3s;}
+.page7 .yellow.move{position: relative;right: 0}
+.page7 .purple{position: relative;right: -9999px;transition: 0.3s;transition-delay: 0.1s;}
+.page7 .purple.move{position: relative;right: 0}
+.page7 .textWrap .text1{
+    font-family: 'GowunBatang-bold';
+    font-size: 76px;
+}
+.page7 .textWrap .text2{
+    font-family: 'GowunBatang-regular';
+    font-size: 22px;
+    font-weight: bolder;
+}
 
 
 
@@ -272,7 +337,10 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 
 
     /* 페이지4 */
-    .page4 .squareWrap{bottom: 100px;position: absolute;}
+    .page4 .mainWrap{z-index: 2;position: absolute;left: -9999px;transition: 0.3s;}
+    .page4 .mainWrap.move{position: absolute;left: 15%;}
+    .page4 .container{position: absolute;right: -9999px;transition: 0.3s;}
+    .page4 .container.move{position: absolute;right: 10%}
     .page4 .textWrap .text1{
         font-family: 'GowunBatang-bold';
         font-size: 45px;
@@ -299,11 +367,17 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
     /* .page5 .mainWrap{position: relative;left: 20px;top: 20px;}
     .page5 .bookcard1,
     .page5 .bookcard2{left: 50%;transform:translateX(-50%)} */
-    .page5 .bookcard1{position: absolute;top: 0;}
-    .page5 .bookcard1 img{width: 100%;}
-    .page5 .bookcard2{position: absolute;right: 0;top: 0;}
-    .page5 .bookcard2 img{width: 100%;}
+
+    /* .page5 .bookcard1{position: absolute;top: 0;} */
+    .page5 .bookcard1 img{width: 90%;}
+    /* .page5 .bookcard2{position: absolute;right: 0;top: 0;} */
+    .page5 .bookcard2 img{width: 90%;}
     .page5 .container{padding-top: 210px;}
+
+    .page5 .bookcard1{position: absolute;top: -400px;opacity: 0;transition: 0.3s;}
+    .page5 .bookcard1.move{position: absolute;top: 0;opacity: 1;}
+    .page5 .bookcard2{position: absolute;right: -130px;top: -300px;opacity: 0;transition: 0.3s;transition-delay: 0.2s;}
+    .page5 .bookcard2.move{position: absolute;right: 0;top: 0;opacity: 1;}
 
 
 
@@ -319,6 +393,28 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
         font-size: 16px;
         font-weight: bolder;
     }
+    .page6 .container{
+        display: flex;position: absolute;
+        bottom: 20%;
+    }
+    .page6 .container img{width: 100%;}
+
+
+    /* 페이지7 */
+    .page7 .mainWrap{z-index: 2;position: absolute;left: -9999px;transition: 0.3s;}
+    .page7 .mainWrap.move{position: absolute;left: 15%;top: 8%;}
+    .page7 .textWrap .text1{
+        font-family: 'GowunBatang-bold';
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    .page7 .textWrap .text2{
+        font-family: 'GowunBatang-regular';
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .page7 .subWrap{position: absolute;bottom: 2%;}
+    /* .page7 .subWrap img{width: 100%;} */
 }
 
 

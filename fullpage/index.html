@@ -23,7 +23,9 @@
 </head>
 <body>
     <header class="fixed d-flex align-items-center justify-content-between">
-        <div class="Mlogo"></div>
+        <a href="#m1st">
+            <div class="Mlogo"></div>
+        </a>
         <div class="loginWrap">
             <div class="login1"></div>
             <div class="login2"></div>
@@ -32,8 +34,12 @@
 
     <div id="fullpage">
 
-        <div class="section page1">
-
+        <div class="section page1" data-anchor="m1st">
+            <div class="scrollBtn">
+                <a href="#m2st">
+                    <img src="images/arrowIcon.svg" alt="">
+                </a>
+            </div>
             <div class="mainWrap">
                 <div class="bgimg1"></div>
                 <div class="textWrap">
@@ -52,7 +58,7 @@
 
         </div>
 
-        <div class="section page2">
+        <div class="section page2" data-anchor="m2st">
             <div class="shelfWrap">
                 <div class="introtext"></div>
                 <div class="shelf1"></div>
@@ -61,9 +67,8 @@
             </div>
         </div>
 
-        <div class="section page3">
+        <div class="section page3" data-anchor="m3st">
             <div class="mainWrap">
-                <div class="bgimg1"></div>
                 <div class="textWrap">
                     <p class="text1">모두의<br>취향을<br>만족시키는</p>
                     <p class="text2 mb-4"><span style="color: rgb(164, 81, 247);">10만 권</span>의 전자책 중<br>골라 읽어요</p>
@@ -74,7 +79,7 @@
             
             <div class="bookWrap">
                 <div class="container-fluid">
-                    <div class="row mb-3">
+                    <div class="row mb-3 book1st">
                         <div class="col-1 offset-md-6 offset-6 px-2"><img src="images/book1.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book2.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book3.png" class="img-fluid"></div>
@@ -83,7 +88,7 @@
                         <div class="col-1 px-2"><img src="images/book6.jpg" class="img-fluid"></div>
                         
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3 book2nd">
                         <div class="col-1 offset-md-5 offset-5 px-2"><img src="images/book9.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book10.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book12.jpg" class="img-fluid"></div>
@@ -92,7 +97,7 @@
                         <div class="col-1 px-2"><img src="images/book15.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book16.jpg" class="img-fluid"></div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3 book3rd">
                         <div class="col-1 offset-md-4 offset-4 px-2"><img src="images/book22.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book17.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book18.jpg" class="img-fluid"></div>
@@ -102,7 +107,7 @@
                         <div class="col-1 px-2"><img src="images/book23.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book24.jpg" class="img-fluid"></div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3 book4th">
                         <div class="col-1 px-2"><img src="images/book25.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book26.jpg" class="img-fluid"></div>
                         <div class="col-1 px-2"><img src="images/book27.jpg" class="img-fluid"></div>
@@ -121,11 +126,10 @@
 
         </div>
 
-        <div class="section page4">
+        <!-- <div class="section page4" data-anchor="m4st">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mainWrap px-0">
-                        <div class="bgimg1"></div>
                         <div class="textWrap">
                             <p class="text1" style="color: #fff;">가끔은<br>가볍고<br>재밌는</p>
                             <p class="text2 mb-4" style="color: #fff;">콘텐츠도<br><span style="color: #6AFAA7;">즐기고</span> 싶으니까!</p>
@@ -140,12 +144,29 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="section page4" data-anchor="m4st">
+            <div class="mainWrap">
+                <div class="textWrap">
+                    <p class="text1" style="color: #fff;">가끔은<br>가볍고<br>재밌는</p>
+                    <p class="text2 mb-4" style="color: #fff;">콘텐츠도<br><span style="color: #6AFAA7;">즐기고</span> 싶으니까!</p>
+                    <p class="text3" style="color:#fff">판타지·무협·로맨스를 포함한<br><span style="font-weight: 600;font-size: 15px;color: #fff;">장르문학</span>과</p>
+                    <p class="text4" style="color: #fff;">시간 순삭<br><span style="font-weight: 600;font-size: 15px;color: #fff;">만화 콘텐츠</span>도<br>무제한으로 줄겨보세요!</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 offset-md-6">
+                        <img src="images/squaregroup.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
 
 
-        <div class="section page5">
+        <div class="section page5" data-anchor="m5st">
                 <div class="mainWrap">
-                    <div class="bgimg1"></div>
                     <div class="textWrap">
                         <p class="text1">아직<br>독서가<br>어려운<br>당신을 위한</p>
                         <p class="text2 mb-4"><span style="color: rgb(164, 81, 247);">쉽고 재밌는</span><br>독서법으로 읽어요</p>
@@ -171,10 +192,9 @@
                 </div>  
         </div>
 
-        <div class="section page6">
+        <div class="section page6" data-anchor="m6st">
             <div class="mainWrap">
-                <div class="bgimg1"></div>
-                <div class="textWrap">
+                <div class="textWrap mb-5">
                     <p class="text1" style="color: #fff;">종이책의<br>감성도<br>놓치기 싫다면</p>
                     <p class="text2 mb-4" style="color: #fff;"><span style="color: #FFEB60;">함께 구독</span>할 수<br>있어요</p>
                     <p class="text3" style="color: #fff;">국내 최고 작가진이 집필한<br><span style="font-weight: 600;font-size: 15px;color: #fff;">밀리 오리지널</span>콘텐츠를</p>
@@ -184,24 +204,43 @@
             </div>
 
             <div class="container">
-                <div class="row">
+                <div class="row gift1">
                     <div class="col-md-6 offset-md-6">
                         <img src="images/giftBoxImg1_20210201.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 offset-md-8">
+                <div class="row gift2">
+                    <div class="col-md-6 offset-md-9">
                         <img src="images/giftBoxImg2_20210201.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row gift3">
                     <div class="col-md-6 offset-md-6">
                         <img src="images/giftBoxImg3_20210201.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section page7">Some section</div>
+
+
+
+        <div class="section page7" data-anchor="m7st">
+            <div class="mainWrap">
+                <div class="textWrap mb-5">
+                    <p class="text2" style="color: #fff;">밀리의 서재를<br>정기구독하고</p>
+                    <p class="text1" style="color: #fff;">시간을<br>가치있게<br>채워<br>나가세요</p>
+                </div>
+            </div>
+
+            <div class="subWrap">
+                <div class="container">
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-md-4 col-6 yellow"><img src="images/11 1.png" alt="" class="img-fluid"></div>
+                        <div class="col-md-4 col-6 purple"><img src="images/11 2.png" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
 
@@ -215,15 +254,18 @@
              
         //     });
         // });
-        new WOW().init();
         $(document).ready(function(){
             $('#fullpage').fullpage({
+                anchors:["m1st","m2st","m3st","m4st","m5st","m6st","m7st"],
                 navigation:true,
                 responsiveWidth: 768,
 
                 afterLoad:function(anchorslink,index){
                     console.log(anchorslink+','+index)
 
+
+
+                    // 밀리 로고 두번 째 페이지 부터 보이기
                     if(index == 2){
                         $(".Mlogo").addClass("on")
                     }else if(index == 3){
@@ -240,13 +282,49 @@
                         $(".Mlogo").removeClass("on") 
                     }
 
+                    // 위에서 떨어지는 책 애니메이션 스크립트
                     if(index == 1){
-                        $(".page1 .bgimg3,.page1 .bgimg4").removeClass("move").addClass("move");
+                        $(".page1 .bgimg3,.page1 .bgimg4, .page1 .mainWrap").removeClass("move").addClass("move");
                         
                     }else{
-                        $(".page1 .bgimg3,.page1 .bgimg4").removeClass("move");
-                       
+                        $(".page1 .bgimg3,.page1 .bgimg4, .page1 .mainWrap").removeClass("move");
                     }
+                    if(index == 2){
+                        $(".page2 .shelf1, .page2 .shelf2, .page2 .shelf3").addClass("move");
+                    }else{
+                        $(".page2 .shelf1, .page2 .shelf2, .page2 .shelf3").removeClass("move");
+                    }
+                    if(index == 3){
+                        $(".page3 .mainWrap").addClass("move");
+                        $(".book1st, .page3 .book2nd, .page3 .book3rd, .page3 .book4th").addClass("move");
+                    }else{
+                        $(".page3 .mainWrap").removeClass("move");
+                        $(".page3 .book1st .page3 .book2nd .page3 .book3rd, .page3 .book4th").removeClass("move");
+                    }
+                    if(index == 4){
+                        $(".page4 .mainWrap, .page4 .container").addClass("move");
+                    }else{
+                        $(".page4 .mainWrap, .page4 .container").removeClass("move");
+                    }
+                    if(index == 5){
+                        $(".page5 .mainWrap, .page5 .bookcard1, .page5 .bookcard2").addClass("move");
+                    }else{
+                        $(".page5 .mainWrap, .page5 .bookcard1, .page5 .bookcard2").removeClass("move");
+                    }
+                    if(index == 6){
+                        $(".page6 .mainWrap, .page6 .gift1, .page6 .gift2, .page6 .gift3").addClass("move");
+                    }else{
+                        $(".page6 .mainWrap, .page6 .gift1, .page6 .gift2, .page6 .gift3").removeClass("move");
+                    }
+                    if(index == 7){
+                        $(".page7 .mainWrap, .page7 .yellow, .page7 .purple").addClass("move");
+                    }else{
+                        $(".page7 .mainWrap, .page7 .yellow, .page7 .purple").removeClass("move");
+                    }
+
+                    
+
+                    
 
                    
 
