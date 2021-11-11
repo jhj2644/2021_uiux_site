@@ -58,6 +58,7 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
     position: absolute;bottom: 30px;
     left: 50%;transform: translateX(-50%);
     animation: xScroll 0.8s infinite alternate;
+    z-index: 10;
 }
 .scrollBtn img{width: 60px;}
 @keyframes xScroll {to{bottom: 50px;}}
