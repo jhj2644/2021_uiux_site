@@ -75,13 +75,13 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 
 .page1 .textWrap .text1{
     font-family: 'GowunBatang-bold';
-    /* font-size: 76px; */
-    font-size: 5vw;
+    font-size: 76px;
+    /* font-size: 5vw; */
 }
 .page1 .textWrap .text2{
     font-family: 'GowunBatang-regular';
-    /* font-size: 22px; */
-    font-size: 1.3vw;
+    font-size: 22px;
+    /* font-size: 1.3vw; */
     font-weight: bolder;
 }
 .page1 .mainWrap{opacity: 0;transition: 2s;}
@@ -311,15 +311,55 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 
     .mainWrap{position: absolute;left: 15%;top: 8%;}
 
+    
+    .page1 .bgimg2{
+        width: 500px;height: 300px;
+        position: absolute;bottom: 0;left: 50%;transform: translate(-30%);
+        background-image: url(../images/headerBgImg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .page1 .bgimg3{
+        width: 25px;height: 25px;
+        position: absolute;top: 0;left: 190px;
+        transform: translate(-28%,-500%);
+        background-image: url(../images/headerBgBook1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transition:1s;
+        opacity:0
+    }
+    .page1 .bgimg3.move{
+        transform: translate(0,70px);
+        opacity:1
+    
+    }
+    .page1 .bgimg4{
+        width: 15px;height: 15px;
+        position: absolute;top: 0px;left: 225px;
+        background-image: url(../images/headerBgBook2.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transition:1s;
+        transition-delay: 0.5s;
+        opacity:0;
+    }
+    .page1 .bgimg4.move{
+        transform: translate(0,75px);
+        opacity: 1;
+    }
 
     .page1 .textWrap .text1{
         font-family: 'GowunBatang-bold';
-        /* font-size: 45px; */
+        font-size: 45px;
         font-weight: bolder;
     }
     .page1 .textWrap .text2{
         font-family: 'GowunBatang-regular';
-        /* font-size: 16px; */
+        font-size: 16px;
         font-weight: bolder;
     }
     .loginWrap{display: flex;position: absolute;top: 25px;right: 20px;}
