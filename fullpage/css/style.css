@@ -63,6 +63,7 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 .scrollBtn img{width: 60px;}
 @keyframes xScroll {to{bottom: 50px;}}
 .mainWrap{position: absolute;left: 20%;top: 10%;}
+
 .page1 .bgimg1{
     width: 65px;height: 25px;margin-bottom: 20px;
     /* position: absolute;top: 0;left: 50%; */
@@ -74,11 +75,13 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 
 .page1 .textWrap .text1{
     font-family: 'GowunBatang-bold';
-    font-size: 76px;
+    /* font-size: 76px; */
+    font-size: 5vw;
 }
 .page1 .textWrap .text2{
     font-family: 'GowunBatang-regular';
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: 1.3vw;
     font-weight: bolder;
 }
 .page1 .mainWrap{opacity: 0;transition: 2s;}
@@ -311,12 +314,12 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
 
     .page1 .textWrap .text1{
         font-family: 'GowunBatang-bold';
-        font-size: 45px;
+        /* font-size: 45px; */
         font-weight: bolder;
     }
     .page1 .textWrap .text2{
         font-family: 'GowunBatang-regular';
-        font-size: 16px;
+        /* font-size: 16px; */
         font-weight: bolder;
     }
     .loginWrap{display: flex;position: absolute;top: 25px;right: 20px;}
