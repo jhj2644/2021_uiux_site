@@ -385,7 +385,7 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
     .page4 .mainWrap.move{position: absolute;left: 15%;}
     .page4 .container{position: absolute;right: -9999px;transition: 0.3s;}
     .page4 .container img{width: 400px;}
-    .page4 .container.move{position: absolute;right: -5%}
+    .page4 .container.move{position: absolute;right: 0;bottom: 20%;}
     .page4 .textWrap .text1{
         font-family: 'GowunBatang-bold';
         font-size: 45px;
