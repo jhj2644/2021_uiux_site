@@ -422,9 +422,9 @@ header{width: 100%;height: 80px;position: fixed;padding: 20px 40px;z-index: 1;}
     .page5 .container{padding-top: 210px;}
 
     .page5 .bookcard1{position: absolute;top: -400px;opacity: 0;transition: 0.3s;}
-    .page5 .bookcard1.move{position: absolute;top: 40px;opacity: 1;}
+    .page5 .bookcard1.move{position: absolute;top: 0;opacity: 1;}
     .page5 .bookcard2{position: absolute;right: -130px;top: -300px;opacity: 0;transition: 0.3s;transition-delay: 0.2s;}
-    .page5 .bookcard2.move{position: absolute;right: 0;top: 40px;opacity: 1;}
+    .page5 .bookcard2.move{position: absolute;right: 0;top: 0;opacity: 1;}
 
 
 
