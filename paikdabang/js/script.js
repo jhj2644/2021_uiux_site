@@ -133,7 +133,6 @@ $(document).ready(function(){
     
     //subpage
     $("ul>li").click(function(){
-
         let num = $(this).index();
 
         $("ul>li").removeClass();
@@ -142,6 +141,7 @@ $(document).ready(function(){
         $(".maincontent>div").hide();
         $(".maincontent>div").eq(num).show();
     })
+
     
     
 
