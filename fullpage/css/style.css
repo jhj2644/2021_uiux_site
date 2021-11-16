@@ -1,5 +1,5 @@
 @charset "utf-8";
-body{font-family: 'GowunBatang-Bold','GowunBatang-Regular';overflow: hidden;overflow: hidden;}
+body{font-family: 'GowunBatang-Bold','GowunBatang-Regular';overflow: hidden;}
 @font-face {
     font-family: 'GowunBatang-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');

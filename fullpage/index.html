@@ -18,6 +18,7 @@
     <script src="js/jquery.fullPage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     <script src="js/wow.js"></script>
+    
 
 
 </head>
@@ -34,7 +35,7 @@
 
     <div id="fullpage">
 
-        <div class="section page1" data-anchor="m1st">
+        <div class="section page1" data-anchor="m1st" style="overflow:hidden">
             <div class="scrollBtn">
                 <a href="#m2st">
                     <img src="images/arrowIcon.svg" alt="">
@@ -58,7 +59,7 @@
 
         </div>
 
-        <div class="section page2" data-anchor="m2st">
+        <div class="section page2" data-anchor="m2st"  style="overflow:hidden">
             <div class="shelfWrap">
                 <div class="introtext"></div>
                 <div class="shelf1"></div>
@@ -67,7 +68,7 @@
             </div>
         </div>
 
-        <div class="section page3" data-anchor="m3st">
+        <div class="section page3" data-anchor="m3st" style="overflow:hidden">
             <div class="mainWrap">
                 <div class="textWrap">
                     <p class="text1">모두의<br>취향을<br>만족시키는</p>
@@ -126,26 +127,7 @@
 
         </div>
 
-        <!-- <div class="section page4" data-anchor="m4st">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 mainWrap px-0">
-                        <div class="textWrap">
-                            <p class="text1" style="color: #fff;">가끔은<br>가볍고<br>재밌는</p>
-                            <p class="text2 mb-4" style="color: #fff;">콘텐츠도<br><span style="color: #6AFAA7;">즐기고</span> 싶으니까!</p>
-                            <p class="text3" style="color:#fff">판타지·무협·로맨스를 포함한<br><span style="font-weight: 600;font-size: 15px;color: #fff;">장르문학</span>과</p>
-                            <p class="text4" style="color: #fff;">시간 순삭<br><span style="font-weight: 600;font-size: 15px;color: #fff;">만화 콘텐츠</span>도<br>무제한으로 줄겨보세요!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 offset-md-6 squareWrap">
-                        <img src="images/squaregroup.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="section page4" data-anchor="m4st">
+        <div class="section page4" data-anchor="m4st" style="overflow:hidden">
             <div class="mainWrap">
                 <div class="textWrap">
                     <p class="text1" style="color: #fff;">가끔은<br>가볍고<br>재밌는</p>
@@ -165,7 +147,7 @@
         </div>
 
 
-        <div class="section page5" data-anchor="m5st">
+        <div class="section page5" data-anchor="m5st" style="overflow:hidden">
                 <div class="mainWrap">
                     <div class="textWrap">
                         <p class="text1">아직<br>독서가<br>어려운<br>당신을 위한</p>
@@ -192,7 +174,7 @@
                 </div>  
         </div>
 
-        <div class="section page6" data-anchor="m6st">
+        <div class="section page6" data-anchor="m6st" style="overflow:hidden">
             <div class="mainWrap">
                 <div class="textWrap mb-5">
                     <p class="text1" style="color: #fff;">종이책의<br>감성도<br>놓치기 싫다면</p>
@@ -224,7 +206,7 @@
 
 
 
-        <div class="section page7" data-anchor="m7st">
+        <div class="section page7" data-anchor="m7st" style="overflow:hidden">
             <div class="mainWrap">
                 <div class="textWrap mb-5">
                     <p class="text2" style="color: #fff;">밀리의 서재를<br>정기구독하고</p>
@@ -254,6 +236,7 @@
              
         //     });
         // });
+        
         $(document).ready(function(){
             $('#fullpage').fullpage({
                 anchors:["m1st","m2st","m3st","m4st","m5st","m6st","m7st"],
